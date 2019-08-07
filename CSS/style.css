@@ -74,3 +74,23 @@ header {
     font-size: 20px;
     font-weight: bold;
 }
+
+.football {
+    color: brown;
+}
+
+.videoGames {
+    color: green;
+}
+
+.anime {
+    color: red;
+}
+
+.basketball {
+    color: orange;
+}
+
+.marvelMovies {
+    color: silver;
+}
