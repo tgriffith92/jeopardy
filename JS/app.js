@@ -1,3 +1,22 @@
+//create container for the football answers
+const footballAnswers = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.', 
+                        'This is the number of games in the NFL regular season.', 
+                        'This is the first African American head coach to win a Super Bowl.', 
+                        'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
+                        'This is the first year the Atlanta Falcons played in the NFL.'];
+
+//create a new div to hold the football answers
+const footballDiv = () => {
+    let footballCont = document.createElement('DIV');
+
+    footballCont.innerText = footballAnswers[0];
+
+    footballCont.classList.add('footballAns');
+
+    document.querySelector('body').appendChild(footballCont);
+}
+
+footballDiv();
 //first column
 const firstFiveCont = () => {
 
@@ -403,11 +422,5 @@ const fifthOneCont = () => {
 //onclick move the number 5 into the third 100 container
 document.querySelector('.fifthOne').addEventListener('click', fifthOneCont);
 
-//create container for the football answers
-let footballAnswers = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.', 
-                        'This is the number of games in the NFL regular season.', 
-                        'This is the first African American head coach to win a Super Bowl.', 
-                        'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
-                        'This is the first year the Atlanta Falcons played in the NFL.'];
 
 let footballQuestions = [];
