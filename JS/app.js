@@ -7,6 +7,15 @@ const footballAnswers = ['This quarterback plays for the New England Patriots an
 
 //create a new div to hold the football answers
 const footballDiv = () => {
+    event.preventDefault();
+
+    let numberFive = document.querySelector('.football');
+    
+    let firstFive = document.querySelector('.firstFive');
+    
+    //make the number 1 a child of the first 500 container
+    firstFive.appendChild(numberFive);
+    
     let footballCont = document.querySelector('.footballQA');
 
     footballCont.innerText = footballAnswers[0];
@@ -16,26 +25,12 @@ const footballDiv = () => {
     } else {
         footballCont.style.display = 'none';
     }
-}
-
-footballDiv();
-
-//first column
-const firstFiveCont = () => {
-
-     event.preventDefault();
-
-    let numberFive = document.querySelector('.football');
-    
-    let firstFive = document.querySelector('.firstFive');
-    
-    //make the number 1 a child of the first 500 container
-    firstFive.appendChild(numberFive);
 
 }
+
 
 //onclick move the number 1 into the first 500 container
-document.querySelector('.firstFive').addEventListener('click', firstFiveCont);
+document.querySelector('.firstFive').addEventListener('click', footballDiv);
 
 const firstFourCont = () => {
 
