@@ -7,16 +7,19 @@ const footballAnswers = ['This quarterback plays for the New England Patriots an
 
 //create a new div to hold the football answers
 const footballDiv = () => {
-    let footballCont = document.createElement('DIV');
+    let footballCont = document.querySelector('.footballQA');
 
     footballCont.innerText = footballAnswers[0];
 
-    footballCont.classList.add('footballAns');
-
-    document.querySelector('body').appendChild(footballCont);
+    if(footballCont.style.display !== 'none') {
+        footballCont.style.display = 'block';
+    } else {
+        footballCont.style.display = 'none';
+    }
 }
 
 footballDiv();
+
 //first column
 const firstFiveCont = () => {
 

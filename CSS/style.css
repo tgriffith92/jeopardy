@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-around;
 }
-
+/* Header styling*/
 .catFootball {
     color: brown;
 }
@@ -28,16 +28,20 @@ header {
     color: silver;
 }
 
+/* main container */
 .pointContainer {
     margin-top: 50px;
+    position: relative;
 }
 
+/* display the point values horizontally and center the containers */
 .oneContainer, .twoContainer, .threeContainer, .fourContainer, .fiveContainer {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
+/* style the point values */
 .one {
     height: 40px;
     width: 80px;
@@ -68,6 +72,7 @@ header {
     border: 2px solid black;
 }
 
+/* make the numbers at the bottom evenly spaced */
 .categories {
     margin-top: 20px;
     display: flex;
@@ -76,10 +81,15 @@ header {
     font-weight: bold;
 }
 
-.footballAns {
+/* place the football questions and answers in front of the point container */
+.footballQA {
     z-index: 1000;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
+    position: absolute;
+    background-color: brown;
+    color: white;
+    display: none;
 }
 
 .points {
