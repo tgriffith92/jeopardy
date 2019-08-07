@@ -76,6 +76,12 @@ header {
     font-weight: bold;
 }
 
+.points {
+    border: 3px solid black;
+    width: 100px;
+    height: 30px;
+}
+
 .football {
     color: brown;
 }
