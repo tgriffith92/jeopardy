@@ -28,6 +28,13 @@ header {
     color: silver;
 }
 
-.pointContainer, .oneContainer, .twoContainer, .threeContainer, .fourContainer, .fiveContainer {
+.oneContainer, .twoContainer, .threeContainer, .fourContainer, .fiveContainer {
     display: flex;
+    justify-content: center;
+}
+
+.one {
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
 }
