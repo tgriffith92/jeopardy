@@ -1,12 +1,18 @@
-let addNumber = () => {
-    event.preventDefault();
+const addNumber = () => {
 
-    document.querySelector('.five').innerText = document.querySelector('.football').innerText;
+    
+     event.preventDefault();
+
+     
+    let numberFive = document.querySelector('.football').innerText;
+    
+    let firstFive = document.querySelector('.firstFive').innerText;
+    
+    document.querySelector('.football').remove();
+    firstFive = numberFive;
+    console.log(firstFive);
+    return firstFive;
 }
 
-let moveNumber = () => {
+    document.querySelector('.firstFive').addEventListener('click', addNumber);
 
-    event.preventDefault();
-
-    document.querySelector('.five').addEventListener('click', addNumber);
-}

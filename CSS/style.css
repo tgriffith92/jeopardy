@@ -70,7 +70,7 @@ header {
 .categories {
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 20px;
     font-weight: bold;
 }
