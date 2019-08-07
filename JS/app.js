@@ -9,12 +9,9 @@ const addNumberFiveOne = () => {
     //make the number 1 a child of the first 500 container
     firstFive.appendChild(numberFive);
 
-    //set the innerText of firstFive equal to numberFive
-    firstFive = numberFive;
-    
-    return firstFive;
 }
 
+//onclick move the number 1 into the first 500 container
 document.querySelector('.firstFive').addEventListener('click', addNumberFiveOne);
 
 const addNumberFourOne = () => {
@@ -25,14 +22,42 @@ const addNumberFourOne = () => {
    
    let firstFour = document.querySelector('.firstFour');
    
-   //make the number 1 a child of the first 500 container
+   //make the number 1 a child of the first 400 container
    firstFour.appendChild(numberFour);
 
-   //set the innerText of firstFive equal to numberFive
-   firstFour = numberFour;
-   
-   return firstFour;
 }
 
+//onclick move the number 1 into the first 400 container
 document.querySelector('.firstFour').addEventListener('click', addNumberFourOne);
 
+const addNumberThreeOne = () => {
+
+    event.preventDefault();
+
+   let numberThree = document.querySelector('.football');
+   
+   let firstThree = document.querySelector('.firstThree');
+   
+   //make the number 1 a child of the first 300 container
+   firstThree.appendChild(numberThree);
+
+}
+
+//onclick move the number 1 into the first 300 container
+document.querySelector('.firstThree').addEventListener('click', addNumberThreeOne);
+
+const addNumberTwoOne = () => {
+
+    event.preventDefault();
+
+   let numberTwo = document.querySelector('.football');
+   
+   let firstTwo = document.querySelector('.firstTwo');
+   
+   //make the number 1 a child of the first 200 container
+   firstThree.appendChild(numberThree);
+
+}
+
+//onclick move the number 1 into the first 200 container
+document.querySelector('.firstTwo').addEventListener('click', addNumberTwoOne);
