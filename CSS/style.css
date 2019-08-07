@@ -28,6 +28,10 @@ header {
     color: silver;
 }
 
+.pointContainer {
+    margin-top: 100px;
+}
+
 .oneContainer, .twoContainer, .threeContainer, .fourContainer, .fiveContainer {
     display: flex;
     justify-content: center;
@@ -35,6 +39,30 @@ header {
 
 .one {
     height: 40px;
-    width: 40px;
+    width: 80px;
+    border: 2px solid black;
+}
+
+.two {
+    height: 80px;
+    width: 120px;
+    border: 2px solid black;
+}
+
+.three {
+    height: 120px;
+    width: 160px;
+    border: 2px solid black;
+}
+
+.four {
+    height: 160px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.five {
+    height: 200px;
+    width: 240px;
     border: 2px solid black;
 }
