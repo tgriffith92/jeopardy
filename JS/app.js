@@ -1,10 +1,18 @@
 //create container for the football answers
-const footballAnswers = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.', 
-                        'This is the number of games in the NFL regular season.', 
-                        'This is the first African American head coach to win a Super Bowl.', 
-                        'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
-                        'This is the first year the Atlanta Falcons played in the NFL.'];
+const footballAnswersOne = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.\n', 
+                            'Who is Drew Brees?\n', 
+                            'Who is Peyton Manning?\n', 
+                            'Who is Tom Brady?\n', 
+                            'Who is Aaron Rodgers?'
+                        ];
 
+const footballAnswersTwo = [];
+
+
+//'This is the number of games in the NFL regular season.', 
+// 'This is the first African American head coach to win a Super Bowl.', 
+// 'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
+// 'This is the first year the Atlanta Falcons played in the NFL.'
 //create a new div to hold the football answers
 const footballDiv = () => {
     event.preventDefault();
@@ -18,7 +26,7 @@ const footballDiv = () => {
     
     let footballCont = document.querySelector('.footballQA');
 
-    footballCont.innerText = footballAnswers[0];
+    footballCont.innerText = footballAnswersOne[0];
 
     if(footballCont.style.display !== 'none') {
         footballCont.style.display = 'block';
@@ -419,6 +427,3 @@ const fifthOneCont = () => {
 
 //onclick move the number 5 into the third 100 container
 document.querySelector('.fifthOne').addEventListener('click', fifthOneCont);
-
-
-let footballQuestions = [];
