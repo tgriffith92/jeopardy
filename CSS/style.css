@@ -35,6 +35,7 @@ header {
 .oneContainer, .twoContainer, .threeContainer, .fourContainer, .fiveContainer {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .one {

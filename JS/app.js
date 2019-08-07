@@ -4,13 +4,15 @@ const addNumber = () => {
      event.preventDefault();
 
      
-    let numberFive = document.querySelector('.football').innerText;
+    let numberFive = document.querySelector('.football');
     
-    let firstFive = document.querySelector('.firstFive').innerText;
+    let firstFive = document.querySelector('.firstFive');
     
-    document.querySelector('.football').remove();
+    firstFive.appendChild(numberFive);
+
+    //set the innerText of firstFive equal to numberFive
     firstFive = numberFive;
-    console.log(firstFive);
+    
     return firstFive;
 }
 
