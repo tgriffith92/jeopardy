@@ -1,10 +1,5 @@
 //create container for the football answers
-const footballAnswersOne = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.\n', 
-                            'Who is Drew Brees?\n', 
-                            'Who is Peyton Manning?\n', 
-                            'Who is Tom Brady?\n', 
-                            'Who is Aaron Rodgers?'
-                        ];
+const footballAnswersOne = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings. \n Who is Drew Brees? \n Who is Peyton Manning? \n Who is Tom Brady? \n Who is Aaron Rodgers?'];
 
 const footballAnswersTwo = [];
 
@@ -26,7 +21,7 @@ const footballDiv = () => {
     
     let footballCont = document.querySelector('.footballQA');
 
-    footballCont.innerText = footballAnswersOne[0];
+    footballCont.innerText = footballAnswersOne;
 
     if(footballCont.style.display !== 'none') {
         footballCont.style.display = 'block';
@@ -36,9 +31,15 @@ const footballDiv = () => {
 
 }
 
+const footballDisappear = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+}
 
-//onclick move the number 1 into the first 500 container
+//onclick move the number 1 into the first 500 container and make the container appear
 document.querySelector('.firstFive').addEventListener('click', footballDiv);
+
+//onclick make the container disappear
+document.querySelector('.footballQA').addEventListener('click', footballDisappear);
 
 const firstFourCont = () => {
 
