@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: blue;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.football {
+    color: brown;
+}
+
+.videoGames {
+    color: green;
+}
+
+.anime {
+    color: red;
+}
+
+.basketball {
+    color: orange;
+}
+
+.marvelMovies {
+    color: silver;
+}
+
+.pointContainer, .oneContainer, .twoContainer, .threeContainer, .fourContainer, .fiveContainer {
+    display: flex;
+}
