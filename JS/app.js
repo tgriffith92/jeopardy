@@ -1,5 +1,20 @@
+//store the point total
+let total = document.querySelector('.points');
 
+//check if the correct radio button is checked
+let footballQuestions = () => {
+    let footballOne = document.querySelector('#tomBrady');
 
+    document.querySelector('#footballEasy').addEventListener('submit', function() {
+        if(footballOne.checked == true) {
+            console.log('Correct!');
+        } else {
+            console.log('Sorry that is incorrect.');
+        }
+    });
+    
+}
+footballQuestions();
 //'This is the number of games in the NFL regular season.', 
 // 'This is the first African American head coach to win a Super Bowl.', 
 // 'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
