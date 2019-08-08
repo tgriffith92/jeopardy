@@ -1,3 +1,7 @@
+//create a function for the if statements and call them for each Q&A
+//create an array to cycle through the questions and answers
+
+
 //store the point total
 let total = document.querySelector('.points');
 
@@ -32,6 +36,52 @@ const footballQuestionsTwo = () => {
 }
 footballQuestionsTwo();
 
+const footballQuestionsThree = () => {
+    let footballThree = document.querySelector('#tonyDungy');
+
+    document.querySelector('.footballHard').addEventListener('submit', function() {
+        event.preventDefault();
+        if(footballThree.checked == true) {
+            console.log('Correct!');
+        } else {
+            console.log('Sorry that is incorrect.');
+        }
+    });
+    
+}
+footballQuestionsThree();
+
+const footballQuestionsFour = () => {
+    let footballFour = document.querySelector('#allDay');
+
+    document.querySelector('.footballVeryHard').addEventListener('submit', function() {
+        event.preventDefault();
+        if(footballFour.checked == true) {
+            console.log('Correct!');
+        } else {
+            console.log('Sorry that is incorrect.');
+        }
+    });
+    
+}
+footballQuestionsFour();
+
+const footballQuestionsFive = () => {
+    let footballFive = document.querySelector('#falcons');
+
+    document.querySelector('.footballInsane').addEventListener('submit', function() {
+        event.preventDefault();
+        if(footballFive.checked == true) {
+            console.log('Correct!');
+        } else {
+            console.log('Sorry that is incorrect.');
+        }
+    });
+    
+}
+footballQuestionsFive();
+
+
 const footballDisappearOne = () => {
     document.querySelector('.footballQA').style.display = 'none';
 
@@ -41,6 +91,7 @@ const footballDisappearOne = () => {
         document.querySelector('.footballEasy').style.display = 'none';
     }
 }
+
 //onclick make the questions disappear
 document.querySelector('.footballSubmit').addEventListener('click', footballDisappearOne);
 
@@ -53,12 +104,49 @@ const footballDisappearTwo = () => {
         document.querySelector('.footballMedium').style.display = 'none';
     }
 }
+
 //onclick make the questions disappear
 document.querySelector('.footballSubmit2').addEventListener('click', footballDisappearTwo);
  
-// 'This is the first African American head coach to win a Super Bowl.', 
-// 'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
-// 'This is the first year the Atlanta Falcons played in the NFL.'
+const footballDisappearThree = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+
+    if(document.querySelector('.footballHard').style.display === 'none') {
+        document.querySelector('.footballHard').style.display = 'block';
+    } else {
+        document.querySelector('.footballHard').style.display = 'none';
+    }
+}
+
+//onclick make the questions disappear
+document.querySelector('.footballSubmit3').addEventListener('click', footballDisappearThree);
+
+const footballDisappearFour = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+
+    if(document.querySelector('.footballVeryHard').style.display === 'none') {
+        document.querySelector('.footballVeryHard').style.display = 'block';
+    } else {
+        document.querySelector('.footballVeryHard').style.display = 'none';
+    }
+}
+
+//onclick make the questions disappear
+document.querySelector('.footballSubmit4').addEventListener('click', footballDisappearFour);
+
+const footballDisappearFive = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+
+    if(document.querySelector('.footballInsane').style.display === 'none') {
+        document.querySelector('.footballInsane').style.display = 'block';
+    } else {
+        document.querySelector('.footballInsane').style.display = 'none';
+    }
+}
+
+//onclick make the questions disappear
+document.querySelector('.footballSubmit5').addEventListener('click', footballDisappearFive);
+ 
 //create a new div to hold the football answers
 const firstFiveCont = () => {
     event.preventDefault();
@@ -71,11 +159,9 @@ const firstFiveCont = () => {
     firstFive.appendChild(numberFive);
     
     document.querySelector('.footballQA').style.display = 'block';
-    document.querySelector('.footballEasy').style.display = 'block';
+    document.querySelector('.footballInsane').style.display = 'block';
 
 }
-
-
 
 //onclick move the number 1 into the first 500 container and make the container appear
 document.querySelector('.firstFive').addEventListener('click', firstFiveCont);
@@ -92,7 +178,7 @@ const firstFourCont = () => {
    firstFour.appendChild(numberFour);
 
    document.querySelector('.footballQA').style.display = 'block';
-   document.querySelector('.footballMedium').style.display = 'block';
+   document.querySelector('.footballVeryHard').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 400 container and make the container appear
@@ -110,6 +196,7 @@ const firstThreeCont = () => {
    firstThree.appendChild(numberThree);
 
    document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.footballHard').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 300 container
@@ -127,6 +214,7 @@ const firstTwoCont = () => {
    firstTwo.appendChild(numberTwo);
 
    document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.footballMedium').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 200 container
@@ -144,6 +232,7 @@ const firstOneCont = () => {
    firstOne.appendChild(numberOne);
 
    document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.footballEasy').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 100 container

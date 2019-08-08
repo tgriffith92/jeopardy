@@ -92,7 +92,7 @@ header {
     display: none;
 }
 
-.footballEasy, .footballMedium, .footballHard {
+.footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane {
     position: absolute;
     display: none;
 }
