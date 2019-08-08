@@ -26,8 +26,8 @@ const footballDisappear = () => {
 //onclick move the number 1 into the first 500 container and make the container appear
 document.querySelector('.firstFive').addEventListener('click', footballDiv);
 
-//onclick make the questions appear
-document.querySelector('.footballQA').addEventListener('click', footballDisappear);
+//onclick make the questions disappear
+//document.querySelector('.footballQA').addEventListener('click', footballDisappear);
 
 const firstFourCont = () => {
 
