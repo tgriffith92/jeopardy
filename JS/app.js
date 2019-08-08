@@ -7,154 +7,262 @@ let total = document.querySelector('.points');
 
 let newTotal = parseFloat(total.innerText);
 
-//check if the correct radio button is checked
+const correctChoice = document.querySelector('.correct');
+const correctChoice2 = document.querySelector('.correct2');
+const correctChoice3 = document.querySelector('.correct3');
+const correctChoice4 = document.querySelector('.correct4');
+const correctChoice5 = document.querySelector('.correct5');
+
+const correctAnswerOne = () => {
+    
+    if(correctChoice.checked == true) {
+
+        newTotal += 100;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 100;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const correctAnswerTwo = () => {
+    
+    if(correctChoice2.checked == true) {
+
+        newTotal += 200;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 200;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const correctAnswerThree = () => {
+    
+    if(correctChoice3.checked == true) {
+
+        newTotal += 300;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 300;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const correctAnswerFour = () => {
+    
+    if(correctChoice4.checked == true) {
+
+        newTotal += 400;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 400;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const correctAnswerFive = () => {
+
+    
+    if(correctChoice5.checked == true) {
+
+        newTotal += 500;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 500;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+//check if the correct radio button is checked for the football category
 const footballQuestionsOne = () => {
-    let footballOne = document.querySelector('#tomBrady');
 
     document.querySelector('.footballEasy').addEventListener('submit', function() {
         event.preventDefault();
-        if(footballOne.checked == true) {
 
-           newTotal += 100;
-           total.innerText = newTotal;
-           console.log(newTotal);
+        correctAnswerOne();
 
-        } else {
-
-            newTotal -= 100;
-            total.innerText = newTotal;
-            console.log(newTotal);
-        }
     });
     
 }
 footballQuestionsOne();
 
 const footballQuestionsTwo = () => {
-    let footballTwo = document.querySelector('#sixteen');
 
     document.querySelector('.footballMedium').addEventListener('submit', function() {
         event.preventDefault();
-        if(footballTwo.checked == true) {
-            console.log('Correct');
-        } else {
-            console.log('Sorry that is incorrect.');
-        }
+       
+        correctAnswerTwo();
+
     });
     
 }
 footballQuestionsTwo();
 
 const footballQuestionsThree = () => {
-    let footballThree = document.querySelector('#tonyDungy');
 
     document.querySelector('.footballHard').addEventListener('submit', function() {
         event.preventDefault();
-        if(footballThree.checked == true) {
-            console.log('Correct!');
-        } else {
-            console.log('Sorry that is incorrect.');
-        }
+       
+        correctAnswerThree();
+
     });
     
 }
 footballQuestionsThree();
 
 const footballQuestionsFour = () => {
-    let footballFour = document.querySelector('#allDay');
 
     document.querySelector('.footballVeryHard').addEventListener('submit', function() {
         event.preventDefault();
-        if(footballFour.checked == true) {
-            console.log('Correct!');
-        } else {
-            console.log('Sorry that is incorrect.');
-        }
+        
+        correctAnswerFour();
+
     });
     
 }
 footballQuestionsFour();
 
 const footballQuestionsFive = () => {
-    let footballFive = document.querySelector('#falcons');
 
     document.querySelector('.footballInsane').addEventListener('submit', function() {
         event.preventDefault();
-        if(footballFive.checked == true) {
-            console.log('Correct!');
-        } else {
-            console.log('Sorry that is incorrect.');
-        }
+        
+        correctAnswerFive();
+
     });
     
 }
 footballQuestionsFive();
 
-
+//make the football container disappear
 const footballDisappearOne = () => {
-    document.querySelector('.footballQA').style.display = 'none';
 
-    if(document.querySelector('.footballEasy').style.display === 'none') {
-        document.querySelector('.footballEasy').style.display = 'block';
-    } else {
-        document.querySelector('.footballEasy').style.display = 'none';
-    }
+    document.querySelector('.footballQA').style.display = 'none';
+    document.querySelector('.footballEasy').style.display = 'none';
 }
 
 //onclick make the questions disappear
 document.querySelector('.footballSubmit').addEventListener('click', footballDisappearOne);
 
 const footballDisappearTwo = () => {
-    document.querySelector('.footballQA').style.display = 'none';
 
-    if(document.querySelector('.footballMedium').style.display === 'none') {
-        document.querySelector('.footballMedium').style.display = 'block';
-    } else {
-        document.querySelector('.footballMedium').style.display = 'none';
-    }
+    document.querySelector('.footballQA').style.display = 'none';
+    document.querySelector('.footballMedium').style.display = 'none';
 }
 
 //onclick make the questions disappear
 document.querySelector('.footballSubmit2').addEventListener('click', footballDisappearTwo);
  
 const footballDisappearThree = () => {
-    document.querySelector('.footballQA').style.display = 'none';
 
-    if(document.querySelector('.footballHard').style.display === 'none') {
-        document.querySelector('.footballHard').style.display = 'block';
-    } else {
-        document.querySelector('.footballHard').style.display = 'none';
-    }
+    document.querySelector('.footballQA').style.display = 'none';
+    document.querySelector('.footballHard').style.display = 'none';
+   
 }
 
 //onclick make the questions disappear
 document.querySelector('.footballSubmit3').addEventListener('click', footballDisappearThree);
 
 const footballDisappearFour = () => {
-    document.querySelector('.footballQA').style.display = 'none';
 
-    if(document.querySelector('.footballVeryHard').style.display === 'none') {
-        document.querySelector('.footballVeryHard').style.display = 'block';
-    } else {
-        document.querySelector('.footballVeryHard').style.display = 'none';
-    }
+    document.querySelector('.footballQA').style.display = 'none';
+    document.querySelector('.footballVeryHard').style.display = 'none';
+   
 }
 
 //onclick make the questions disappear
 document.querySelector('.footballSubmit4').addEventListener('click', footballDisappearFour);
 
 const footballDisappearFive = () => {
-    document.querySelector('.footballQA').style.display = 'none';
 
-    if(document.querySelector('.footballInsane').style.display === 'none') {
-        document.querySelector('.footballInsane').style.display = 'block';
-    } else {
-        document.querySelector('.footballInsane').style.display = 'none';
-    }
+    document.querySelector('.footballQA').style.display = 'none';
+    document.querySelector('.footballInsane').style.display = 'none';
+
 }
 
 //onclick make the questions disappear
 document.querySelector('.footballSubmit5').addEventListener('click', footballDisappearFive);
+
+//check if the correct radio button is checked for the video games category
+// const gamerQuestionsOne = () => {
+
+//     document.querySelector('.gamerEasy').addEventListener('submit', function() {
+//         event.preventDefault();
+
+//         correctAnswer();
+
+//     });
+    
+// }
+// gamerQuestionsOne();
+
+// const gamerQuestionsTwo = () => {
+
+//     document.querySelector('.gamerMedium').addEventListener('submit', function() {
+//         event.preventDefault();
+       
+//         correctAnswer();
+
+//     });
+    
+// }
+// gamerQuestionsTwo();
+
+// const gamerQuestionsThree = () => {
+
+//     document.querySelector('.gamerHard').addEventListener('submit', function() {
+//         event.preventDefault();
+       
+//         correctAnswer();
+
+//     });
+    
+// }
+// gamerQuestionsThree();
+
+// const gamerQuestionsFour = () => {
+
+//     document.querySelector('.gamerVeryHard').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         correctAnswer();
+
+//     });
+    
+// }
+// gamerQuestionsFour();
+
+// const gamerQuestionsFive = () => {
+
+//     document.querySelector('.gamerInsane').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         correctAnswer();
+
+//     });
+    
+// }
+// gamerQuestionsFive();
  
 //create a new div to hold the football answers
 const firstFiveCont = () => {
