@@ -86,9 +86,14 @@ header {
     z-index: 1000;
     height: 80vh;
     width: 100vw;
-    position: absolute;
+    position: relative;
     background-color: brown;
     color: white;
+    display: none;
+}
+
+.footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane {
+    position: absolute;
     display: none;
 }
 
