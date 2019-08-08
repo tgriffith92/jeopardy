@@ -6,6 +6,7 @@ let footballQuestions = () => {
     let footballOne = document.querySelector('#tomBrady');
 
     document.querySelector('#footballEasy').addEventListener('submit', function() {
+        event.preventDefault();
         if(footballOne.checked == true) {
             console.log('Correct!');
         } else {
@@ -15,7 +16,7 @@ let footballQuestions = () => {
     
 }
 footballQuestions();
-//'This is the number of games in the NFL regular season.', 
+//'This is the number of games a team plays in the NFL regular season.', 
 // 'This is the first African American head coach to win a Super Bowl.', 
 // 'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
 // 'This is the first year the Atlanta Falcons played in the NFL.'
@@ -42,7 +43,7 @@ const footballDisappear = () => {
 document.querySelector('.firstFive').addEventListener('click', footballDiv);
 
 //onclick make the questions disappear
-//document.querySelector('.footballQA').addEventListener('click', footballDisappear);
+document.querySelector('.footballSubmit').addEventListener('click', footballDisappear);
 
 const firstFourCont = () => {
 
