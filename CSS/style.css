@@ -31,7 +31,8 @@ header {
 /* main container */
 .pointContainer {
     margin-top: 50px;
-    position: relative;
+    position: absolute;
+    z-index: 1000;
 }
 
 /* display the point values horizontally and center the containers */
@@ -86,14 +87,14 @@ header {
     z-index: 1000;
     height: 80vh;
     width: 100vw;
-    position: relative;
     background-color: brown;
     color: white;
     display: none;
+    position: absolute;
 }
 
 .footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane {
-    position: absolute;
+    
     display: none;
 }
 

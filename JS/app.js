@@ -4,6 +4,7 @@
 
 //store the point total
 let total = document.querySelector('.points');
+let newTotal = parseFloat(total.innerText);
 
 //check if the correct radio button is checked
 const footballQuestionsOne = () => {
@@ -12,9 +13,16 @@ const footballQuestionsOne = () => {
     document.querySelector('.footballEasy').addEventListener('submit', function() {
         event.preventDefault();
         if(footballOne.checked == true) {
-            console.log('Correct!');
+
+           newTotal += 100;
+           total.innerText = newTotal;
+
+           console.log(newTotal)
         } else {
-            console.log('Sorry that is incorrect.');
+
+            newTotal -= 100;
+            total.innerText = newTotal;
+
         }
     });
     
@@ -27,7 +35,7 @@ const footballQuestionsTwo = () => {
     document.querySelector('.footballMedium').addEventListener('submit', function() {
         event.preventDefault();
         if(footballTwo.checked == true) {
-            console.log('Correct!');
+            console.log('Correct');
         } else {
             console.log('Sorry that is incorrect.');
         }
