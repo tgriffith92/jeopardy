@@ -4,6 +4,7 @@
 
 //store the point total
 let total = document.querySelector('.points');
+
 let newTotal = parseFloat(total.innerText);
 
 //check if the correct radio button is checked
@@ -16,13 +17,13 @@ const footballQuestionsOne = () => {
 
            newTotal += 100;
            total.innerText = newTotal;
+           console.log(newTotal);
 
-           console.log(newTotal)
         } else {
 
             newTotal -= 100;
             total.innerText = newTotal;
-
+            console.log(newTotal);
         }
     });
     
