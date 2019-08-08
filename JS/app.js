@@ -2,10 +2,10 @@
 let total = document.querySelector('.points');
 
 //check if the correct radio button is checked
-let footballQuestions = () => {
+const footballQuestionsOne = () => {
     let footballOne = document.querySelector('#tomBrady');
 
-    document.querySelector('#footballEasy').addEventListener('submit', function() {
+    document.querySelector('.footballEasy').addEventListener('submit', function() {
         event.preventDefault();
         if(footballOne.checked == true) {
             console.log('Correct!');
@@ -15,13 +15,52 @@ let footballQuestions = () => {
     });
     
 }
-footballQuestions();
-//'This is the number of games a team plays in the NFL regular season.', 
+footballQuestionsOne();
+
+const footballQuestionsTwo = () => {
+    let footballTwo = document.querySelector('#sixteen');
+
+    document.querySelector('.footballMedium').addEventListener('submit', function() {
+        event.preventDefault();
+        if(footballTwo.checked == true) {
+            console.log('Correct!');
+        } else {
+            console.log('Sorry that is incorrect.');
+        }
+    });
+    
+}
+footballQuestionsTwo();
+
+const footballDisappearOne = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+
+    if(document.querySelector('.footballEasy').style.display === 'none') {
+        document.querySelector('.footballEasy').style.display = 'block';
+    } else {
+        document.querySelector('.footballEasy').style.display = 'none';
+    }
+}
+//onclick make the questions disappear
+document.querySelector('.footballSubmit').addEventListener('click', footballDisappearOne);
+
+const footballDisappearTwo = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+
+    if(document.querySelector('.footballMedium').style.display === 'none') {
+        document.querySelector('.footballMedium').style.display = 'block';
+    } else {
+        document.querySelector('.footballMedium').style.display = 'none';
+    }
+}
+//onclick make the questions disappear
+document.querySelector('.footballSubmit2').addEventListener('click', footballDisappearTwo);
+ 
 // 'This is the first African American head coach to win a Super Bowl.', 
 // 'These “penalties” are simultaneous violations by the offense and defense that cancel each other out.', 
 // 'This is the first year the Atlanta Falcons played in the NFL.'
 //create a new div to hold the football answers
-const footballDiv = () => {
+const firstFiveCont = () => {
     event.preventDefault();
 
     let numberFive = document.querySelector('.football');
@@ -32,18 +71,14 @@ const footballDiv = () => {
     firstFive.appendChild(numberFive);
     
     document.querySelector('.footballQA').style.display = 'block';
+    document.querySelector('.footballEasy').style.display = 'block';
 
 }
-const footballDisappear = () => {
-    document.querySelector('.footballQA').style.display = 'none';
-}
+
 
 
 //onclick move the number 1 into the first 500 container and make the container appear
-document.querySelector('.firstFive').addEventListener('click', footballDiv);
-
-//onclick make the questions disappear
-document.querySelector('.footballSubmit').addEventListener('click', footballDisappear);
+document.querySelector('.firstFive').addEventListener('click', firstFiveCont);
 
 const firstFourCont = () => {
 
@@ -56,9 +91,11 @@ const firstFourCont = () => {
    //make the number 1 a child of the first 400 container
    firstFour.appendChild(numberFour);
 
+   document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.footballMedium').style.display = 'block';
 }
 
-//onclick move the number 1 into the first 400 container
+//onclick move the number 1 into the first 400 container and make the container appear
 document.querySelector('.firstFour').addEventListener('click', firstFourCont);
 
 const firstThreeCont = () => {
@@ -72,6 +109,7 @@ const firstThreeCont = () => {
    //make the number 1 a child of the first 300 container
    firstThree.appendChild(numberThree);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 300 container
@@ -88,6 +126,7 @@ const firstTwoCont = () => {
    //make the number 1 a child of the first 200 container
    firstTwo.appendChild(numberTwo);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 200 container
@@ -104,6 +143,7 @@ const firstOneCont = () => {
    //make the number 1 a child of the first 100 container
    firstOne.appendChild(numberOne);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 1 into the first 100 container
@@ -121,6 +161,7 @@ const secondFiveCont = () => {
    //make the number 2 a child of the second 500 container
    secondFive.appendChild(numberFive);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 2 into the second 500 container
@@ -137,6 +178,7 @@ const secondFourCont = () => {
   //make the number 2 a child of the second 400 container
   secondFour.appendChild(numberFour);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 2 into the second 400 container
@@ -153,6 +195,7 @@ const secondThreeCont = () => {
   //make the number 2 a child of the second 300 container
   secondThree.appendChild(numberThree);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 2 into the second 300 container
@@ -169,6 +212,7 @@ const secondTwoCont = () => {
   //make the number 2 a child of the second 200 container
   secondTwo.appendChild(numberTwo);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 2 into the second 200 container
@@ -185,6 +229,7 @@ const secondOneCont = () => {
   //make the number 2 a child of the second 100 container
   secondOne.appendChild(numberOne);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 2 into the second 100 container
@@ -202,6 +247,7 @@ const thirdFiveCont = () => {
    //make the number 3 a child of the third 500 container
    thirdFive.appendChild(numberFive);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 500 container
@@ -218,6 +264,7 @@ const thirdFourCont = () => {
   //make the number 3 a child of the third 400 container
   thirdFour.appendChild(numberFour);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 400 container
@@ -234,6 +281,7 @@ const thirdThreeCont = () => {
   //make the number 3 a child of the third 300 container
   thirdThree.appendChild(numberThree);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 300 container
@@ -250,6 +298,7 @@ const thirdTwoCont = () => {
   //make the number 3 a child of the third 200 container
   thirdTwo.appendChild(numberTwo);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 200 container
@@ -266,6 +315,7 @@ const thirdOneCont = () => {
   //make the number 3 a child of the third 100 container
   thirdOne.appendChild(numberOne);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 100 container
@@ -283,6 +333,7 @@ const fourthFiveCont = () => {
    //make the number 4 a child of the third 500 container
    fourthFive.appendChild(numberFive);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 500 container
@@ -299,6 +350,7 @@ const fourthFourCont = () => {
   //make the number 4 a child of the third 400 container
   fourthFour.appendChild(numberFour);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 400 container
@@ -315,6 +367,7 @@ const fourthThreeCont = () => {
   //make the number 4 a child of the third 300 container
   fourthThree.appendChild(numberThree);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 300 container
@@ -331,6 +384,7 @@ const fourthTwoCont = () => {
   //make the number 4 a child of the third 200 container
   fourthTwo.appendChild(numberTwo);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 200 container
@@ -347,6 +401,7 @@ const fourthOneCont = () => {
   //make the number 4 a child of the third 100 container
   fourthOne.appendChild(numberOne);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 100 container
@@ -364,6 +419,7 @@ const fifthFiveCont = () => {
    //make the number 5 a child of the third 500 container
    fifthFive.appendChild(numberFive);
 
+   document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 500 container
@@ -380,6 +436,7 @@ const fifthFourCont = () => {
   //make the number 5 a child of the third 400 container
   fifthFour.appendChild(numberFour);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 400 container
@@ -396,6 +453,7 @@ const fifthThreeCont = () => {
   //make the number 5 a child of the third 300 container
   fifthThree.appendChild(numberThree);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 300 container
@@ -412,6 +470,7 @@ const fifthTwoCont = () => {
   //make the number 5 a child of the third 200 container
   fifthTwo.appendChild(numberTwo);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 200 container
@@ -428,6 +487,7 @@ const fifthOneCont = () => {
   //make the number 5 a child of the third 100 container
   fifthOne.appendChild(numberOne);
 
+  document.querySelector('.footballQA').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 100 container
