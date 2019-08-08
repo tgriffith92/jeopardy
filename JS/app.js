@@ -1,7 +1,11 @@
 //create container for the football answers
-const footballAnswersOne = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings. \n Who is Drew Brees? \n Who is Peyton Manning? \n Who is Tom Brady? \n Who is Aaron Rodgers?'];
+const footballAnswersOne = ['This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.',
+                            'Who is Drew Brees? \n',
+                            'Who is Peyton Manning? \n', 
+                            'Who is Tom Brady? \n',
+                            'Who is Aaron Rodgers?'];
 
-const footballAnswersTwo = [];
+const footballQuestionsOne = [ ];
 
 
 //'This is the number of games in the NFL regular season.', 
