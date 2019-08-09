@@ -171,6 +171,9 @@ const gamerQADisappear = () => {
     document.querySelector('.videoGamesQA').style.display = 'none';
 }
 
+const animeQADisappear = () => {
+    document.querySelector('.animeQA').style.display = 'none';
+}
 //make the football container disappear
 const footballDisappearOne = () => {
 
@@ -221,41 +224,71 @@ const footballDisappearFive = () => {
 document.querySelector('.footballSubmit5').addEventListener('click', footballDisappearFive);
 
 //check if the correct radio button is checked for the video games category
-// const gamerQuestionsOne = () => {
+const gamerQuestionsOne = () => {
 
-//     document.querySelector('.gamerEasy').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.gamerEasy').addEventListener('submit', function() {
+        event.preventDefault();
 
-//         correctAnswer();
+        correctAnswerOne();
 
-//     });
+    });
     
-// }
-// gamerQuestionsOne();
+}
+gamerQuestionsOne();
 
-// const gamerQuestionsTwo = () => {
+const gamerDisappearOne = () => {
 
-//     document.querySelector('.gamerMedium').addEventListener('submit', function() {
-//         event.preventDefault();
+    gamerQADisappear();
+    document.querySelector('.gamerEasy').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.gamerSubmit').addEventListener('click', gamerDisappearOne);
+
+const gamerQuestionsTwo = () => {
+
+    document.querySelector('.gamerMedium').addEventListener('submit', function() {
+        event.preventDefault();
        
-//         correctAnswer();
+        correctAnswerTwo();
 
-//     });
+    });
     
-// }
-// gamerQuestionsTwo();
+}
+gamerQuestionsTwo();
 
-// const gamerQuestionsThree = () => {
+const gamerDisappearTwo = () => {
 
-//     document.querySelector('.gamerHard').addEventListener('submit', function() {
-//         event.preventDefault();
+    gamerQADisappear();
+    document.querySelector('.gamerMedium').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.gamerSubmit2').addEventListener('click', gamerDisappearTwo);
+
+const gamerQuestionsThree = () => {
+
+    document.querySelector('.gamerHard').addEventListener('submit', function() {
+        event.preventDefault();
        
-//         correctAnswer();
+        correctAnswerThree();
 
-//     });
+    });
     
-// }
-// gamerQuestionsThree();
+}
+gamerQuestionsThree();
+
+const gamerDisappearThree = () => {
+
+    gamerQADisappear();
+    document.querySelector('.gamerHard').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.gamerSubmit3').addEventListener('click', gamerDisappearThree);
 
 const gamerQuestionsFour = () => {
 
@@ -300,7 +333,29 @@ const gamerDisappearFive = () => {
 
 //onclick make the questions disappear
 document.querySelector('.gamerSubmit5').addEventListener('click', gamerDisappearFive);
- 
+
+const animeQuestionsFive = () => {
+
+    document.querySelector('.animeInsane').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        correctAnswerFive();
+
+    });
+    
+}
+animeQuestionsFive();
+
+const animeDisappearFive = () => {
+
+    animeQADisappear();
+    document.querySelector('.animeInsane').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.animeSubmit5').addEventListener('click', animeDisappearFive);
+
 //create a new div to hold the football answers
 const firstFiveCont = () => {
     event.preventDefault();
@@ -429,56 +484,59 @@ const secondFourCont = () => {
 //onclick move the number 2 into the second 400 container
 document.querySelector('.secondFour').addEventListener('click', secondFourCont);
 
-// const secondThreeCont = () => {
+const secondThreeCont = () => {
 
-//    event.preventDefault();
+   event.preventDefault();
 
-//   let numberThree = document.querySelector('.gamer');
+  let numberThree = document.querySelector('.videoGames');
   
-//   let secondThree = document.querySelector('.secondThree');
+  let secondThree = document.querySelector('.secondThree');
   
-//   //make the number 2 a child of the second 300 container
-//   secondThree.appendChild(numberThree);
+  //make the number 2 a child of the second 300 container
+  secondThree.appendChild(numberThree);
 
-//   document.querySelector('.videoGamesQA').style.display = 'block';
-// }
+  document.querySelector('.videoGamesQA').style.display = 'block';
+  document.querySelector('.gamerHard').style.display = 'block';
+}
 
-// //onclick move the number 2 into the second 300 container
-// document.querySelector('.secondThree').addEventListener('click', secondThreeCont);
+//onclick move the number 2 into the second 300 container
+document.querySelector('.secondThree').addEventListener('click', secondThreeCont);
 
-// const secondTwoCont = () => {
+const secondTwoCont = () => {
 
-//    event.preventDefault();
+   event.preventDefault();
 
-//   let numberTwo = document.querySelector('.gamer');
+  let numberTwo = document.querySelector('.videoGames');
   
-//   let secondTwo = document.querySelector('.secondTwo');
+  let secondTwo = document.querySelector('.secondTwo');
   
-//   //make the number 2 a child of the second 200 container
-//   secondTwo.appendChild(numberTwo);
+  //make the number 2 a child of the second 200 container
+  secondTwo.appendChild(numberTwo);
 
-//   document.querySelector('.videoGamesQA').style.display = 'block';
-// }
+  document.querySelector('.videoGamesQA').style.display = 'block';
+  document.querySelector('.gamerMedium').style.display = 'block';
+}
 
-// //onclick move the number 2 into the second 200 container
-// document.querySelector('.secondTwo').addEventListener('click', secondTwoCont);
+//onclick move the number 2 into the second 200 container
+document.querySelector('.secondTwo').addEventListener('click', secondTwoCont);
 
-// const secondOneCont = () => {
+const secondOneCont = () => {
 
-//    event.preventDefault();
+   event.preventDefault();
 
-//   let numberOne = document.querySelector('.gamer');
+  let numberOne = document.querySelector('.videoGames');
   
-//   let secondOne = document.querySelector('.secondOne');
+  let secondOne = document.querySelector('.secondOne');
   
-//   //make the number 2 a child of the second 100 container
-//   secondOne.appendChild(numberOne);
+  //make the number 2 a child of the second 100 container
+  secondOne.appendChild(numberOne);
 
-//   document.querySelector('.videoGamesQA').style.display = 'block';
-// }
+  document.querySelector('.videoGamesQA').style.display = 'block';
+  document.querySelector('.gamerEasy').style.display = 'block';
+}
 
-// //onclick move the number 2 into the second 100 container
-// document.querySelector('.secondOne').addEventListener('click', secondOneCont);
+//onclick move the number 2 into the second 100 container
+document.querySelector('.secondOne').addEventListener('click', secondOneCont);
 
 //third column
 const thirdFiveCont = () => {
@@ -492,7 +550,8 @@ const thirdFiveCont = () => {
    //make the number 3 a child of the third 500 container
    thirdFive.appendChild(numberFive);
 
-   document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.animeQA').style.display = 'block';
+   document.querySelector('.animeInsane').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 500 container
@@ -509,7 +568,8 @@ const thirdFourCont = () => {
   //make the number 3 a child of the third 400 container
   thirdFour.appendChild(numberFour);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.animeQA').style.display = 'block';
+  document.querySelector('.animeVeryHard').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 400 container
@@ -526,7 +586,8 @@ const thirdThreeCont = () => {
   //make the number 3 a child of the third 300 container
   thirdThree.appendChild(numberThree);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.animeQA').style.display = 'block';
+  document.querySelector('.animeHard').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 300 container
@@ -543,7 +604,8 @@ const thirdTwoCont = () => {
   //make the number 3 a child of the third 200 container
   thirdTwo.appendChild(numberTwo);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.animeQA').style.display = 'block';
+  document.querySelector('.animeMedium').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 200 container
@@ -560,7 +622,8 @@ const thirdOneCont = () => {
   //make the number 3 a child of the third 100 container
   thirdOne.appendChild(numberOne);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.animeQA').style.display = 'block';
+  document.querySelector('.animeEasy').style.display = 'block';
 }
 
 //onclick move the number 3 into the third 100 container
