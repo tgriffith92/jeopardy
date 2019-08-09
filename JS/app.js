@@ -19,7 +19,11 @@ const gamerChoice3 = document.querySelector('.gamerCorrect3');
 const gamerChoice4 = document.querySelector('.gamerCorrect4');
 const gamerChoice5 = document.querySelector('.gamerCorrect5');
 
-const footballClass = document.querySelector('.football');
+const animeChoice = document.querySelector('.animeCorrect');
+const animeChoice2 = document.querySelector('.animeCorrect2');
+const animeChoice3 = document.querySelector('.animeCorrect3');
+const animeChoice4 = document.querySelector('.animeCorrect4');
+const animeChoice5 = document.querySelector('.animeCorrect5');
 
 const correctAnswerOne = () => {
     
@@ -40,6 +44,22 @@ const correctAnswerOne = () => {
 const gamerAnswerOne = () => {
     
     if(gamerChoice.checked == true) {
+
+        newTotal += 100;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 100;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const animeAnswerOne = () => {
+    
+    if(animeChoice.checked == true) {
 
         newTotal += 100;
         total.innerText = newTotal;
@@ -85,6 +105,22 @@ const gamerAnswerTwo = () => {
      }
 }
 
+const animeAnswerTwo = () => {
+    
+    if(animeChoice2.checked == true) {
+
+        newTotal += 200;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 200;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 const correctAnswerThree = () => {
     
     if(correctChoice3.checked == true) {
@@ -104,6 +140,22 @@ const correctAnswerThree = () => {
 const gamerAnswerThree = () => {
     
     if(gamerChoice3.checked == true) {
+
+        newTotal += 300;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 300;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const animeAnswerThree = () => {
+    
+    if(animeChoice3.checked == true) {
 
         newTotal += 300;
         total.innerText = newTotal;
@@ -149,6 +201,22 @@ const gamerAnswerFour = () => {
      }
 }
 
+const animeAnswerFour = () => {
+    
+    if(animeChoice4.checked == true) {
+
+        newTotal += 400;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 400;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 const correctAnswerFive = () => {
 
     
@@ -170,6 +238,23 @@ const gamerAnswerFive = () => {
 
     
     if(gamerChoice5.checked == true) {
+
+        newTotal += 500;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 500;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const animeAnswerFive = () => {
+
+    
+    if(animeChoice5.checked == true) {
 
         newTotal += 500;
         total.innerText = newTotal;
@@ -421,7 +506,7 @@ const animeQuestionsOne = () => {
     document.querySelector('.animeEasy').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerOne();
+        animeAnswerOne();
 
     });
     
@@ -443,7 +528,7 @@ const animeQuestionsTwo = () => {
     document.querySelector('.animeMedium').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerTwo();
+        animeAnswerTwo();
 
     });
     
@@ -465,7 +550,7 @@ const animeQuestionsThree = () => {
     document.querySelector('.animeHard').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerThree();
+        animeAnswerThree();
 
     });
     
@@ -487,7 +572,7 @@ const animeQuestionsFour = () => {
     document.querySelector('.animeVeryHard').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerFour();
+        animeAnswerFour();
 
     });
     
@@ -509,7 +594,7 @@ const animeQuestionsFive = () => {
     document.querySelector('.animeInsane').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerFive();
+        animeAnswerFive();
 
     });
     
@@ -525,6 +610,116 @@ const animeDisappearFive = () => {
 
 //onclick make the questions disappear
 document.querySelector('.animeSubmit5').addEventListener('click', animeDisappearFive);
+
+// const basketballQuestionsOne = () => {
+
+//     document.querySelector('.basketballEasy').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         basketballAnswerOne();
+
+//     });
+    
+// }
+// basketballQuestionsOne();
+
+// const basketballDisappearOne = () => {
+
+//     basketballQADisappear();
+//     document.querySelector('.basketballEasy').style.display = 'none';
+
+// }
+
+// //onclick make the questions disappear
+// document.querySelector('.basketballSubmit').addEventListener('click', basketballDisappearOne);
+
+// const basketballQuestionsTwo = () => {
+
+//     document.querySelector('.basketballMedium').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         basketballAnswerTwo();
+
+//     });
+    
+// }
+// basketballQuestionsTwo();
+
+// const basketballDisappearTwo = () => {
+
+//     basketballQADisappear();
+//     document.querySelector('.basketballMedium').style.display = 'none';
+
+// }
+
+// //onclick make the questions disappear
+// document.querySelector('.basketballSubmit2').addEventListener('click', basketballDisappearTwo);
+
+// const basketballQuestionsThree = () => {
+
+//     document.querySelector('.basketballHard').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         basketballAnswerThree();
+
+//     });
+    
+// }
+// basketballQuestionsThree();
+
+// const basketballDisappearThree = () => {
+
+//     basketballQADisappear();
+//     document.querySelector('.basketballHard').style.display = 'none';
+
+// }
+
+// //onclick make the questions disappear
+// document.querySelector('.basketballSubmit3').addEventListener('click', basketballDisappearThree);
+
+// const animeQuestionsFour = () => {
+
+//     document.querySelector('.basketballVeryHard').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         basketballAnswerFour();
+
+//     });
+    
+// }
+// basketballQuestionsFour();
+
+// const basketballDisappearFour = () => {
+
+//     basketballQADisappear();
+//     document.querySelector('.basketballVeryHard').style.display = 'none';
+
+// }
+
+// //onclick make the questions disappear
+// document.querySelector('.basketballSubmit4').addEventListener('click', basketballDisappearFour);
+
+// const basketballQuestionsFive = () => {
+
+//     document.querySelector('.basketballInsane').addEventListener('submit', function() {
+//         event.preventDefault();
+        
+//         basketballAnswerFive();
+
+//     });
+    
+// }
+// basketballQuestionsFive();
+
+// const basketballDisappearFive = () => {
+
+//     basketballQADisappear();
+//     document.querySelector('.basketballInsane').style.display = 'none';
+
+// }
+
+// //onclick make the questions disappear
+// document.querySelector('.basktballSubmit5').addEventListener('click', basktballDisappearFive);
 
 //create a new div to hold the football answers
 const firstFiveCont = () => {
@@ -811,7 +1006,8 @@ const fourthFiveCont = () => {
    //make the number 4 a child of the third 500 container
    fourthFive.appendChild(numberFive);
 
-   document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.basketballQA').style.display = 'block';
+   document.querySelector('.basketballInsane').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 500 container
@@ -828,7 +1024,8 @@ const fourthFourCont = () => {
   //make the number 4 a child of the third 400 container
   fourthFour.appendChild(numberFour);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.basketballQA').style.display = 'block';
+  document.querySelector('.basketballVeryHard').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 400 container
@@ -845,7 +1042,8 @@ const fourthThreeCont = () => {
   //make the number 4 a child of the third 300 container
   fourthThree.appendChild(numberThree);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.basketballQA').style.display = 'block';
+  document.querySelector('.basketballHard').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 300 container
@@ -862,7 +1060,8 @@ const fourthTwoCont = () => {
   //make the number 4 a child of the third 200 container
   fourthTwo.appendChild(numberTwo);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.basketballQA').style.display = 'block';
+  document.querySelector('.basketballMedium').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 200 container
@@ -879,7 +1078,8 @@ const fourthOneCont = () => {
   //make the number 4 a child of the third 100 container
   fourthOne.appendChild(numberOne);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.basketballQA').style.display = 'block';
+  document.querySelector('.basketballEasy').style.display = 'block';
 }
 
 //onclick move the number 4 into the third 100 container

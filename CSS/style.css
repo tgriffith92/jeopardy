@@ -115,9 +115,21 @@ header {
     position: absolute;
 }
 
+/* place the basketball questions and answers in front of the points container */
+.basketballQA {
+    z-index: 1000;
+    height: 80vh;
+    width: 100vw;
+    background-color: orange;
+    color: black;
+    display: none;
+    position: absolute;
+}
+
 .footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane,
 .gamerEasy, .gamerMedium, .gamerHard, .gamerVeryHard, .gamerInsane,
-.animeEasy, .animeMedium, .animeHard, .animeVeryHard, .animeInsane {
+.animeEasy, .animeMedium, .animeHard, .animeVeryHard, .animeInsane,
+.basketballEasy, .basketballMedium, .basketballHard, .basketballVeryHard, .basketballInsane {
     
     display: none;
 }
