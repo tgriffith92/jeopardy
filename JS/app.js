@@ -43,13 +43,12 @@ const correctAnswerOne = () => {
 
         newTotal += 100;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 100;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -59,13 +58,12 @@ const gamerAnswerOne = () => {
 
         newTotal += 100;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 100;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -75,13 +73,11 @@ const animeAnswerOne = () => {
 
         newTotal += 100;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 100;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -90,14 +86,12 @@ const basketballAnswerOne = () => {
     if(basketballChoice.checked == true) {
 
         newTotal += 100;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        total.innerText = newTotal
 
      } else {
 
          newTotal -= 100;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -106,14 +100,12 @@ const marvelAnswerOne = () => {
     if(marvelChoice.checked == true) {
 
         newTotal += 100;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        total.innerText = newTotal
 
      } else {
 
          newTotal -= 100;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -122,14 +114,12 @@ const correctAnswerTwo = () => {
     if(correctChoice2.checked == true) {
 
         newTotal += 200;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        total.innerText = newTotal
 
      } else {
 
          newTotal -= 200;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -138,14 +128,12 @@ const gamerAnswerTwo = () => {
     if(gamerChoice2.checked == true) {
 
         newTotal += 200;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        t
 
      } else {
 
          newTotal -= 200;
-         total.innerText = newTotal;
-         console.log(newTotal);
+         to
      }
 }
 
@@ -154,14 +142,12 @@ const animeAnswerTwo = () => {
     if(animeChoice2.checked == true) {
 
         newTotal += 200;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        t
 
      } else {
 
          newTotal -= 200;
-         total.innerText = newTotal;
-         console.log(newTotal);
+         to
      }
 }
 
@@ -170,14 +156,12 @@ const basketballAnswerTwo = () => {
     if(basketballChoice2.checked == true) {
 
         newTotal += 200;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        t
 
      } else {
 
          newTotal -= 200;
-         total.innerText = newTotal;
-         console.log(newTotal);
+         to
      }
 }
 
@@ -186,14 +170,12 @@ const marvelAnswerTwo = () => {
     if(marvelChoice2.checked == true) {
 
         newTotal += 200;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        t
 
      } else {
 
          newTotal -= 200;
-         total.innerText = newTotal;
-         console.log(newTotal);
+         to
      }
 }
 
@@ -202,14 +184,12 @@ const correctAnswerThree = () => {
     if(correctChoice3.checked == true) {
 
         newTotal += 300;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        t
 
      } else {
 
          newTotal -= 300;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -218,14 +198,12 @@ const gamerAnswerThree = () => {
     if(gamerChoice3.checked == true) {
 
         newTotal += 300;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        total.innerText = newTotal
 
      } else {
 
          newTotal -= 300;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -234,14 +212,12 @@ const animeAnswerThree = () => {
     if(animeChoice3.checked == true) {
 
         newTotal += 300;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        total.innerText = newTotal
 
      } else {
 
          newTotal -= 300;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -250,14 +226,12 @@ const basketballAnswerThree = () => {
     if(basketballChoice3.checked == true) {
 
         newTotal += 300;
-        total.innerText = newTotal;
-        console.log(newTotal);
+        total.innerText = newTotal
 
      } else {
 
          newTotal -= 300;
          total.innerText = newTotal;
-         console.log(newTotal);
      }
 }
 
@@ -267,13 +241,12 @@ const marvelAnswerThree = () => {
 
         newTotal += 300;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 300;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -283,13 +256,12 @@ const correctAnswerFour = () => {
 
         newTotal += 400;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 400;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -299,13 +271,12 @@ const gamerAnswerFour = () => {
 
         newTotal += 400;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 400;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -315,13 +286,12 @@ const animeAnswerFour = () => {
 
         newTotal += 400;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 400;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -331,13 +301,12 @@ const basketballAnswerFour = () => {
 
         newTotal += 400;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 400;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -347,13 +316,12 @@ const marvelAnswerFour = () => {
 
         newTotal += 400;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 400;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -364,13 +332,12 @@ const correctAnswerFive = () => {
 
         newTotal += 500;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 500;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -381,13 +348,12 @@ const gamerAnswerFive = () => {
 
         newTotal += 500;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 500;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -398,13 +364,12 @@ const animeAnswerFive = () => {
 
         newTotal += 500;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 500;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -415,13 +380,12 @@ const basketballAnswerFive = () => {
 
         newTotal += 500;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 500;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 
@@ -432,13 +396,12 @@ const marvelAnswerFive = () => {
 
         newTotal += 500;
         total.innerText = newTotal;
-        console.log(newTotal);
 
      } else {
 
          newTotal -= 500;
          total.innerText = newTotal;
-         console.log(newTotal);
+
      }
 }
 

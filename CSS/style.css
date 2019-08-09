@@ -7,6 +7,11 @@ header {
     display: flex;
     justify-content: space-around;
 }
+
+span {
+    margin: 0 auto;
+}
+
 /* Header styling*/
 .catFootball {
     color: brown;
