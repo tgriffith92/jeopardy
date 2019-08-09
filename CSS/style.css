@@ -94,7 +94,7 @@ header {
 }
 
 /* place the video game questions and answers in front of the points container */
-.videoGameQA {
+.videoGamesQA {
     z-index: 1000;
     height: 80vh;
     width: 100vw;

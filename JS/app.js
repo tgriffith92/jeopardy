@@ -13,6 +13,8 @@ const correctChoice3 = document.querySelector('.correct3');
 const correctChoice4 = document.querySelector('.correct4');
 const correctChoice5 = document.querySelector('.correct5');
 
+const footballClass = document.querySelector('.football');
+
 const correctAnswerOne = () => {
     
     if(correctChoice.checked == true) {
@@ -154,10 +156,14 @@ const footballQuestionsFive = () => {
 }
 footballQuestionsFive();
 
+const footballQADisappear = () => {
+    document.querySelector('.footballQA').style.display = 'none';
+}
+
 //make the football container disappear
 const footballDisappearOne = () => {
 
-    document.querySelector('.footballQA').style.display = 'none';
+    footballQADisappear();
     document.querySelector('.footballEasy').style.display = 'none';
 }
 
@@ -166,7 +172,7 @@ document.querySelector('.footballSubmit').addEventListener('click', footballDisa
 
 const footballDisappearTwo = () => {
 
-    document.querySelector('.footballQA').style.display = 'none';
+    footballQADisappear();
     document.querySelector('.footballMedium').style.display = 'none';
 }
 
@@ -175,7 +181,7 @@ document.querySelector('.footballSubmit2').addEventListener('click', footballDis
  
 const footballDisappearThree = () => {
 
-    document.querySelector('.footballQA').style.display = 'none';
+    footballQADisappear();
     document.querySelector('.footballHard').style.display = 'none';
    
 }
@@ -185,7 +191,7 @@ document.querySelector('.footballSubmit3').addEventListener('click', footballDis
 
 const footballDisappearFour = () => {
 
-    document.querySelector('.footballQA').style.display = 'none';
+    footballQADisappear();
     document.querySelector('.footballVeryHard').style.display = 'none';
    
 }
@@ -195,7 +201,7 @@ document.querySelector('.footballSubmit4').addEventListener('click', footballDis
 
 const footballDisappearFive = () => {
 
-    document.querySelector('.footballQA').style.display = 'none';
+    footballQADisappear();
     document.querySelector('.footballInsane').style.display = 'none';
 
 }
@@ -360,17 +366,18 @@ const secondFiveCont = () => {
 
     event.preventDefault();
 
-   let numberFive = document.querySelector('.videoGames');
+   let videoFive = document.querySelector('.videoGames');
    
    let secondFive = document.querySelector('.secondFive');
    
    //make the number 2 a child of the second 500 container
-   secondFive.appendChild(numberFive);
+   secondFive.appendChild(videoFive);
 
-   document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.videoGamesQA').style.display = 'block';
+   document.querySelector('.gamerEasy').style.display = 'block';
 }
 
-//onclick move the number 2 into the second 500 container
+// //onclick move the number 2 into the second 500 container
 document.querySelector('.secondFive').addEventListener('click', secondFiveCont);
 
 const secondFourCont = () => {
@@ -384,62 +391,62 @@ const secondFourCont = () => {
   //make the number 2 a child of the second 400 container
   secondFour.appendChild(numberFour);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.videoGamesQA').style.display = 'block';
 }
 
-//onclick move the number 2 into the second 400 container
+// //onclick move the number 2 into the second 400 container
 document.querySelector('.secondFour').addEventListener('click', secondFourCont);
 
-const secondThreeCont = () => {
+// const secondThreeCont = () => {
 
-   event.preventDefault();
+//    event.preventDefault();
 
-  let numberThree = document.querySelector('.videoGames');
+//   let numberThree = document.querySelector('.gamer');
   
-  let secondThree = document.querySelector('.secondThree');
+//   let secondThree = document.querySelector('.secondThree');
   
-  //make the number 2 a child of the second 300 container
-  secondThree.appendChild(numberThree);
+//   //make the number 2 a child of the second 300 container
+//   secondThree.appendChild(numberThree);
 
-  document.querySelector('.footballQA').style.display = 'block';
-}
+//   document.querySelector('.videoGamesQA').style.display = 'block';
+// }
 
-//onclick move the number 2 into the second 300 container
-document.querySelector('.secondThree').addEventListener('click', secondThreeCont);
+// //onclick move the number 2 into the second 300 container
+// document.querySelector('.secondThree').addEventListener('click', secondThreeCont);
 
-const secondTwoCont = () => {
+// const secondTwoCont = () => {
 
-   event.preventDefault();
+//    event.preventDefault();
 
-  let numberTwo = document.querySelector('.videoGames');
+//   let numberTwo = document.querySelector('.gamer');
   
-  let secondTwo = document.querySelector('.secondTwo');
+//   let secondTwo = document.querySelector('.secondTwo');
   
-  //make the number 2 a child of the second 200 container
-  secondTwo.appendChild(numberTwo);
+//   //make the number 2 a child of the second 200 container
+//   secondTwo.appendChild(numberTwo);
 
-  document.querySelector('.footballQA').style.display = 'block';
-}
+//   document.querySelector('.videoGamesQA').style.display = 'block';
+// }
 
-//onclick move the number 2 into the second 200 container
-document.querySelector('.secondTwo').addEventListener('click', secondTwoCont);
+// //onclick move the number 2 into the second 200 container
+// document.querySelector('.secondTwo').addEventListener('click', secondTwoCont);
 
-const secondOneCont = () => {
+// const secondOneCont = () => {
 
-   event.preventDefault();
+//    event.preventDefault();
 
-  let numberOne = document.querySelector('.videoGames');
+//   let numberOne = document.querySelector('.gamer');
   
-  let secondOne = document.querySelector('.secondOne');
+//   let secondOne = document.querySelector('.secondOne');
   
-  //make the number 2 a child of the second 100 container
-  secondOne.appendChild(numberOne);
+//   //make the number 2 a child of the second 100 container
+//   secondOne.appendChild(numberOne);
 
-  document.querySelector('.footballQA').style.display = 'block';
-}
+//   document.querySelector('.videoGamesQA').style.display = 'block';
+// }
 
-//onclick move the number 2 into the second 100 container
-document.querySelector('.secondOne').addEventListener('click', secondOneCont);
+// //onclick move the number 2 into the second 100 container
+// document.querySelector('.secondOne').addEventListener('click', secondOneCont);
 
 //third column
 const thirdFiveCont = () => {
