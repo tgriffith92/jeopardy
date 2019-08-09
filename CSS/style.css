@@ -51,30 +51,35 @@ span {
     height: 40px;
     width: 80px;
     border: 2px solid black;
+    text-align: center;
 }
 
 .two {
     height: 80px;
     width: 120px;
     border: 2px solid black;
+    text-align: center;
 }
 
 .three {
     height: 120px;
     width: 160px;
     border: 2px solid black;
+    text-align: center;
 }
 
 .four {
     height: 160px;
     width: 200px;
     border: 2px solid black;
+    text-align: center;
 }
 
 .five {
     height: 200px;
     width: 240px;
     border: 2px solid black;
+    text-align: center;
 }
 
 /* make the numbers at the bottom evenly spaced */

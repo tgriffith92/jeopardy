@@ -7,6 +7,9 @@ let total = document.querySelector('.points');
 
 let newTotal = parseFloat(total.innerText);
 
+// if(total.innerText >= 5300) {
+//     alert('Hooray you win!!!');
+// }
 const correctChoice = document.querySelector('.correct');
 const correctChoice2 = document.querySelector('.correct2');
 const correctChoice3 = document.querySelector('.correct3');
@@ -37,6 +40,7 @@ const marvelChoice3 = document.querySelector('.marvelCorrect3');
 const marvelChoice4 = document.querySelector('.marvelCorrect4');
 const marvelChoice5 = document.querySelector('.marvelCorrect5');
 
+//add 100 to the point container
 const correctAnswerOne = () => {
     
     if(correctChoice.checked == true) {
@@ -109,6 +113,7 @@ const marvelAnswerOne = () => {
      }
 }
 
+//add 200 to the point container
 const correctAnswerTwo = () => {
     
     if(correctChoice2.checked == true) {
@@ -128,12 +133,12 @@ const gamerAnswerTwo = () => {
     if(gamerChoice2.checked == true) {
 
         newTotal += 200;
-        t
+        total.innerText = newTotal;
 
      } else {
 
          newTotal -= 200;
-         to
+         total.innerText = newTotal;
      }
 }
 
@@ -142,12 +147,12 @@ const animeAnswerTwo = () => {
     if(animeChoice2.checked == true) {
 
         newTotal += 200;
-        t
+        total.innerText = newTotal;
 
      } else {
 
          newTotal -= 200;
-         to
+         total.innerText = newTotal;
      }
 }
 
@@ -156,12 +161,12 @@ const basketballAnswerTwo = () => {
     if(basketballChoice2.checked == true) {
 
         newTotal += 200;
-        t
+        total.innerText = newTotal;
 
      } else {
 
          newTotal -= 200;
-         to
+         total.innerText = newTotal;
      }
 }
 
@@ -170,21 +175,22 @@ const marvelAnswerTwo = () => {
     if(marvelChoice2.checked == true) {
 
         newTotal += 200;
-        t
+        total.innerText = newTotal;
 
      } else {
 
          newTotal -= 200;
-         to
+         total.innerText = newTotal;
      }
 }
 
+//add 300 to the point container
 const correctAnswerThree = () => {
     
     if(correctChoice3.checked == true) {
 
         newTotal += 300;
-        t
+        total.innerText = newTotal;
 
      } else {
 
@@ -250,6 +256,7 @@ const marvelAnswerThree = () => {
      }
 }
 
+//add 400 to the point container
 const correctAnswerFour = () => {
     
     if(correctChoice4.checked == true) {
@@ -325,6 +332,7 @@ const marvelAnswerFour = () => {
      }
 }
 
+//add 500 to the point container
 const correctAnswerFive = () => {
 
     
@@ -412,7 +420,7 @@ const footballQuestionsOne = () => {
         event.preventDefault();
 
         correctAnswerOne();
-
+        document.querySelector('.firstOne').style.backgroundColor = 'black';
     });
     
 }
@@ -424,7 +432,7 @@ const footballQuestionsTwo = () => {
         event.preventDefault();
        
         correctAnswerTwo();
-
+        document.querySelector('.firstTwo').style.backgroundColor = 'black';
     });
     
 }
@@ -436,7 +444,7 @@ const footballQuestionsThree = () => {
         event.preventDefault();
        
         correctAnswerThree();
-
+        document.querySelector('.firstThree').style.backgroundColor = 'black';
     });
     
 }
@@ -448,7 +456,7 @@ const footballQuestionsFour = () => {
         event.preventDefault();
         
         correctAnswerFour();
-
+        document.querySelector('.firstFour').style.backgroundColor = 'black';
     });
     
 }
@@ -460,7 +468,7 @@ const footballQuestionsFive = () => {
         event.preventDefault();
         
         correctAnswerFive();
-
+        document.querySelector('.firstFive').style.backgroundColor = 'black';
     });
     
 }
@@ -492,6 +500,7 @@ const footballDisappearOne = () => {
 
     footballQADisappear();
     document.querySelector('.footballEasy').style.display = 'none';
+    
 }
 
 //onclick make the questions disappear
