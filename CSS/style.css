@@ -30,8 +30,7 @@ header {
 
 /* main container */
 .pointContainer {
-    margin-top: 50px;
-    position: absolute;
+    margin: 0 auto;
     z-index: 1000;
 }
 
@@ -126,10 +125,22 @@ header {
     position: absolute;
 }
 
+/* place the marvel movie questions and answers in front of the points container */
+.marvelQA {
+    z-index: 1000;
+    height: 80vh;
+    width: 100vw;
+    background-color: silver;
+    color: black;
+    display: none;
+    position: absolute;
+}
+
 .footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane,
 .gamerEasy, .gamerMedium, .gamerHard, .gamerVeryHard, .gamerInsane,
 .animeEasy, .animeMedium, .animeHard, .animeVeryHard, .animeInsane,
-.basketballEasy, .basketballMedium, .basketballHard, .basketballVeryHard, .basketballInsane {
+.basketballEasy, .basketballMedium, .basketballHard, .basketballVeryHard, .basketballInsane,
+.marvelEasy, .marvelMedium, .marvelHard, .marvelVeryHard, .marvelInsane {
     
     display: none;
 }

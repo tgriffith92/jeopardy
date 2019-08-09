@@ -25,6 +25,18 @@ const animeChoice3 = document.querySelector('.animeCorrect3');
 const animeChoice4 = document.querySelector('.animeCorrect4');
 const animeChoice5 = document.querySelector('.animeCorrect5');
 
+const basketballChoice = document.querySelector('.basketballCorrect');
+const basketballChoice2 = document.querySelector('.basketballCorrect2');
+const basketballChoice3 = document.querySelector('.basketballCorrect3');
+const basketballChoice4 = document.querySelector('.basketballCorrect4');
+const basketballChoice5 = document.querySelector('.basketballCorrect5');
+
+const marvelChoice = document.querySelector('.marvelCorrect');
+const marvelChoice2 = document.querySelector('.marvelCorrect2');
+const marvelChoice3 = document.querySelector('.marvelCorrect3');
+const marvelChoice4 = document.querySelector('.marvelCorrect4');
+const marvelChoice5 = document.querySelector('.marvelCorrect5');
+
 const correctAnswerOne = () => {
     
     if(correctChoice.checked == true) {
@@ -60,6 +72,38 @@ const gamerAnswerOne = () => {
 const animeAnswerOne = () => {
     
     if(animeChoice.checked == true) {
+
+        newTotal += 100;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 100;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const basketballAnswerOne = () => {
+    
+    if(basketballChoice.checked == true) {
+
+        newTotal += 100;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 100;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const marvelAnswerOne = () => {
+    
+    if(marvelChoice.checked == true) {
 
         newTotal += 100;
         total.innerText = newTotal;
@@ -121,6 +165,38 @@ const animeAnswerTwo = () => {
      }
 }
 
+const basketballAnswerTwo = () => {
+    
+    if(basketballChoice2.checked == true) {
+
+        newTotal += 200;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 200;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const marvelAnswerTwo = () => {
+    
+    if(marvelChoice2.checked == true) {
+
+        newTotal += 200;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 200;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 const correctAnswerThree = () => {
     
     if(correctChoice3.checked == true) {
@@ -156,6 +232,38 @@ const gamerAnswerThree = () => {
 const animeAnswerThree = () => {
     
     if(animeChoice3.checked == true) {
+
+        newTotal += 300;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 300;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const basketballAnswerThree = () => {
+    
+    if(basketballChoice3.checked == true) {
+
+        newTotal += 300;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 300;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const marvelAnswerThree = () => {
+    
+    if(marvelChoice3.checked == true) {
 
         newTotal += 300;
         total.innerText = newTotal;
@@ -217,6 +325,38 @@ const animeAnswerFour = () => {
      }
 }
 
+const basketballAnswerFour = () => {
+    
+    if(basketballChoice4.checked == true) {
+
+        newTotal += 400;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 400;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const marvelAnswerFour = () => {
+    
+    if(marvelChoice4.checked == true) {
+
+        newTotal += 400;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 400;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 const correctAnswerFive = () => {
 
     
@@ -255,6 +395,40 @@ const animeAnswerFive = () => {
 
     
     if(animeChoice5.checked == true) {
+
+        newTotal += 500;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 500;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const basketballAnswerFive = () => {
+
+    
+    if(basketballChoice5.checked == true) {
+
+        newTotal += 500;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 500;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const marvelAnswerFive = () => {
+
+    
+    if(marvelChoice5.checked == true) {
 
         newTotal += 500;
         total.innerText = newTotal;
@@ -341,6 +515,15 @@ const gamerQADisappear = () => {
 const animeQADisappear = () => {
     document.querySelector('.animeQA').style.display = 'none';
 }
+
+const basketballQADisappear = () => {
+    document.querySelector('.basketballQA').style.display = 'none';
+}
+
+const marvelQADisappear = () => {
+    document.querySelector('.marvelQA').style.display = 'none';
+}
+
 //make the football container disappear
 const footballDisappearOne = () => {
 
@@ -611,115 +794,225 @@ const animeDisappearFive = () => {
 //onclick make the questions disappear
 document.querySelector('.animeSubmit5').addEventListener('click', animeDisappearFive);
 
-// const basketballQuestionsOne = () => {
+const basketballQuestionsOne = () => {
 
-//     document.querySelector('.basketballEasy').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.basketballEasy').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         basketballAnswerOne();
+        basketballAnswerOne();
 
-//     });
+    });
     
-// }
-// basketballQuestionsOne();
+}
+basketballQuestionsOne();
 
-// const basketballDisappearOne = () => {
+const basketballDisappearOne = () => {
 
-//     basketballQADisappear();
-//     document.querySelector('.basketballEasy').style.display = 'none';
+    basketballQADisappear();
+    document.querySelector('.basketballEasy').style.display = 'none';
 
-// }
+}
 
-// //onclick make the questions disappear
-// document.querySelector('.basketballSubmit').addEventListener('click', basketballDisappearOne);
+//onclick make the questions disappear
+document.querySelector('.basketballSubmit').addEventListener('click', basketballDisappearOne);
 
-// const basketballQuestionsTwo = () => {
+const basketballQuestionsTwo = () => {
 
-//     document.querySelector('.basketballMedium').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.basketballMedium').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         basketballAnswerTwo();
+        basketballAnswerTwo();
 
-//     });
+    });
     
-// }
-// basketballQuestionsTwo();
+}
+basketballQuestionsTwo();
 
-// const basketballDisappearTwo = () => {
+const basketballDisappearTwo = () => {
 
-//     basketballQADisappear();
-//     document.querySelector('.basketballMedium').style.display = 'none';
+    basketballQADisappear();
+    document.querySelector('.basketballMedium').style.display = 'none';
 
-// }
+}
 
-// //onclick make the questions disappear
-// document.querySelector('.basketballSubmit2').addEventListener('click', basketballDisappearTwo);
+//onclick make the questions disappear
+document.querySelector('.basketballSubmit2').addEventListener('click', basketballDisappearTwo);
 
-// const basketballQuestionsThree = () => {
+const basketballQuestionsThree = () => {
 
-//     document.querySelector('.basketballHard').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.basketballHard').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         basketballAnswerThree();
+        basketballAnswerThree();
 
-//     });
+    });
     
-// }
-// basketballQuestionsThree();
+}
+basketballQuestionsThree();
 
-// const basketballDisappearThree = () => {
+const basketballDisappearThree = () => {
 
-//     basketballQADisappear();
-//     document.querySelector('.basketballHard').style.display = 'none';
+    basketballQADisappear();
+    document.querySelector('.basketballHard').style.display = 'none';
 
-// }
+}
 
-// //onclick make the questions disappear
-// document.querySelector('.basketballSubmit3').addEventListener('click', basketballDisappearThree);
+//onclick make the questions disappear
+document.querySelector('.basketballSubmit3').addEventListener('click', basketballDisappearThree);
 
-// const animeQuestionsFour = () => {
+const basketballQuestionsFour = () => {
 
-//     document.querySelector('.basketballVeryHard').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.basketballVeryHard').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         basketballAnswerFour();
+        basketballAnswerFour();
 
-//     });
+    });
     
-// }
-// basketballQuestionsFour();
+}
+basketballQuestionsFour();
 
-// const basketballDisappearFour = () => {
+const basketballDisappearFour = () => {
 
-//     basketballQADisappear();
-//     document.querySelector('.basketballVeryHard').style.display = 'none';
+    basketballQADisappear();
+    document.querySelector('.basketballVeryHard').style.display = 'none';
 
-// }
+}
 
-// //onclick make the questions disappear
-// document.querySelector('.basketballSubmit4').addEventListener('click', basketballDisappearFour);
+//onclick make the questions disappear
+document.querySelector('.basketballSubmit4').addEventListener('click', basketballDisappearFour);
 
-// const basketballQuestionsFive = () => {
+const basketballQuestionsFive = () => {
 
-//     document.querySelector('.basketballInsane').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.basketballInsane').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         basketballAnswerFive();
+        basketballAnswerFive();
 
-//     });
+    });
     
-// }
-// basketballQuestionsFive();
+}
+basketballQuestionsFive();
 
-// const basketballDisappearFive = () => {
+const basketballDisappearFive = () => {
 
-//     basketballQADisappear();
-//     document.querySelector('.basketballInsane').style.display = 'none';
+    basketballQADisappear();
+    document.querySelector('.basketballInsane').style.display = 'none';
 
-// }
+}
 
-// //onclick make the questions disappear
-// document.querySelector('.basktballSubmit5').addEventListener('click', basktballDisappearFive);
+//onclick make the questions disappear
+document.querySelector('.basketballSubmit5').addEventListener('click', basketballDisappearFive);
+
+const marvelQuestionsOne = () => {
+
+    document.querySelector('.marvelEasy').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        marvelAnswerOne();
+
+    });
+    
+}
+marvelQuestionsOne();
+
+const marvelDisappearOne = () => {
+
+    marvelQADisappear();
+    document.querySelector('.marvelEasy').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.marvelSubmit').addEventListener('click', marvelDisappearOne);
+
+const marvelQuestionsTwo = () => {
+
+    document.querySelector('.marvelMedium').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        marvelAnswerTwo();
+
+    });
+    
+}
+marvelQuestionsTwo();
+
+const marvelDisappearTwo = () => {
+
+    marvelQADisappear();
+    document.querySelector('.marvelMedium').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.marvelSubmit2').addEventListener('click', marvelDisappearTwo);
+
+const marvelQuestionsThree = () => {
+
+    document.querySelector('.marvelHard').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        marvelAnswerThree();
+
+    });
+    
+}
+marvelQuestionsThree();
+
+const marvelDisappearThree = () => {
+
+    marvelQADisappear();
+    document.querySelector('.marvelHard').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.marvelSubmit3').addEventListener('click', marvelDisappearThree);
+
+const marvelQuestionsFour = () => {
+
+    document.querySelector('.marvelVeryHard').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        marvelAnswerFour();
+
+    });
+    
+}
+marvelQuestionsFour();
+
+const marvelDisappearFour = () => {
+
+    marvelQADisappear();
+    document.querySelector('.marvelVeryHard').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.marvelSubmit4').addEventListener('click', marvelDisappearFour);
+
+const marvelQuestionsFive = () => {
+
+    document.querySelector('.marvelInsane').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        marvelAnswerFive();
+
+    });
+    
+}
+marvelQuestionsFive();
+
+const marvelDisappearFive = () => {
+
+    marvelQADisappear();
+    document.querySelector('.marvelInsane').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.marvelSubmit5').addEventListener('click', marvelDisappearFive);
 
 //create a new div to hold the football answers
 const firstFiveCont = () => {
@@ -1097,7 +1390,8 @@ const fifthFiveCont = () => {
    //make the number 5 a child of the third 500 container
    fifthFive.appendChild(numberFive);
 
-   document.querySelector('.footballQA').style.display = 'block';
+   document.querySelector('.marvelQA').style.display = 'block';
+   document.querySelector('.marvelInsane').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 500 container
@@ -1114,7 +1408,8 @@ const fifthFourCont = () => {
   //make the number 5 a child of the third 400 container
   fifthFour.appendChild(numberFour);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.marvelQA').style.display = 'block';
+  document.querySelector('.marvelVeryHard').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 400 container
@@ -1131,7 +1426,8 @@ const fifthThreeCont = () => {
   //make the number 5 a child of the third 300 container
   fifthThree.appendChild(numberThree);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.marvelQA').style.display = 'block';
+  document.querySelector('.marvelHard').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 300 container
@@ -1148,7 +1444,8 @@ const fifthTwoCont = () => {
   //make the number 5 a child of the third 200 container
   fifthTwo.appendChild(numberTwo);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.marvelQA').style.display = 'block';
+  document.querySelector('.marvelMedium').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 200 container
@@ -1165,7 +1462,8 @@ const fifthOneCont = () => {
   //make the number 5 a child of the third 100 container
   fifthOne.appendChild(numberOne);
 
-  document.querySelector('.footballQA').style.display = 'block';
+  document.querySelector('.marvelQA').style.display = 'block';
+  document.querySelector('.marvelEasy').style.display = 'block';
 }
 
 //onclick move the number 5 into the third 100 container
