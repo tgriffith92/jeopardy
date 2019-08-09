@@ -31,7 +31,8 @@ header {
 /* main container */
 .pointContainer {
     margin-top: 50px;
-    position: relative;
+    position: absolute;
+    z-index: 1000;
 }
 
 /* display the point values horizontally and center the containers */
@@ -81,19 +82,30 @@ header {
     font-weight: bold;
 }
 
-/* place the football questions and answers in front of the point container */
+/* place the football questions and answers in front of the points container */
 .footballQA {
     z-index: 1000;
     height: 80vh;
     width: 100vw;
-    position: relative;
     background-color: brown;
     color: white;
     display: none;
+    position: absolute;
 }
 
-.footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane {
+/* place the video game questions and answers in front of the points container */
+.videoGamesQA {
+    z-index: 1000;
+    height: 80vh;
+    width: 100vw;
+    background-color: green;
+    color: yellow;
+    display: none;
     position: absolute;
+}
+.footballEasy, .footballMedium, .footballHard, .footballVeryHard, .footballInsane,
+.gamerEasy, .gamerMedium, .gamerHard, .gamerVeryHard, .gamerInsane {
+    
     display: none;
 }
 

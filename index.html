@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script defer src="JS/app.js"></script>
     <meta charset="UTF-8">
@@ -8,104 +9,150 @@
     <title>Jeopardy</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
     <header>
-            <h1 class="catFootball">Football</h1>
-            <h1 class="catVideoGames">Video Games</h1>
-            <h1 class="catAnime">Anime</h1>
-            <h1 class="catBasketball">Basketball</h1>
-            <h1 class="catMarvelMovies">Marvel Movies</h1>
+        <h1 class="catFootball">Football</h1>
+        <h1 class="catVideoGames">Video Games</h1>
+        <h1 class="catAnime">Anime</h1>
+        <h1 class="catBasketball">Basketball</h1>
+        <h1 class="catMarvelMovies">Marvel Movies</h1>
     </header>
-    
+
     <div class="pointContainer">
 
-            <div class="footballQA">
-                <form class="footballEasy">
-                        <h2>This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.</h2>
-                        <input type="radio" name="football" value="DrewBrees">Who is Drew Brees?<br>
-                        <input type="radio" name="football" value="PeytonManning">Who is Peyton Manning?<br>
-                        <input id="tomBrady" type="radio" name="football" value="TomBrady">Who is Tom Brady?<br>
-                        <input type="radio" name="football" value="AaronRodgers">Who is Aaron Rodgers?<br>
-                        <input class="footballSubmit"type="submit" value="Submit">
+        <!-- Football Category -->
+        <div class="footballQA">
+            <form class="footballEasy">
+                <h2>This quarterback plays for the New England Patriots and has 6 Super Bowl Rings.</h2>
+                <input type="radio" name="football" value="DrewBrees">Who is Drew Brees?<br>
+                <input type="radio" name="football" value="PeytonManning">Who is Peyton Manning?<br>
+                <input class="correct" type="radio" name="football" value="TomBrady">Who is Tom Brady?<br>
+                <input type="radio" name="football" value="AaronRodgers">Who is Aaron Rodgers?<br>
+                <input class="footballSubmit" type="submit" value="Submit">
+            </form>
+            <form class="footballMedium">
+                <h2>This is the number of games a team plays in the NFL regular season.</h2>
+                <input type="radio" name="football" value="DrewBrees">What is 15 games?<br>
+                <input class="correct2" type="radio" name="football" value="PeytonManning">What is 16 games?<br>
+                <input type="radio" name="football" value="TomBrady">What is 17 games?<br>
+                <input type="radio" name="football" value="AaronRodgers">What is 18 games?<br>
+                <input class="footballSubmit2" type="submit" value="Submit">
+            </form>
+            <form class="footballHard">
+                <h2>This is the first African American head coach to win a Super Bowl.</h2>
+                <input class="correct3" type="radio" name="football" value="DrewBrees">Who is Tony Dungy?<br>
+                <input type="radio" name="football" value="PeytonManning">Who is Mike Tomlin?<br>
+                <input type="radio" name="football" value="TomBrady">Who is Lovie Smith?<br>
+                <input type="radio" name="football" value="AaronRodgers">Who is Dennis Green?<br>
+                <input class="footballSubmit3" type="submit" value="Submit">
+            </form>
+            <form class="footballVeryHard">
+                <h2>This is the last non quarterback to win the NFL MVP award.</h2>
+                <input type="radio" name="football" value="DrewBrees">Who is LaDainian Tomlinson?<br>
+                <input class="correct4" type="radio" name="football" value="PeytonManning">Who is Adrian Peterson?<br>
+                <input type="radio" name="football" value="TomBrady">Who is Shaun Alexander?<br>
+                <input type="radio" name="football" value="AaronRodgers">Who is Marshall Faulk?<br>
+                <input class="footballSubmit4" type="submit" value="Submit">
+            </form>
+            <form class="footballInsane">
+                <h2>This is the first year the Atlanta Falcons played in the NFL.</h2>
+                <input type="radio" name="football" value="DrewBrees">What is 1978?<br>
+                <input type="radio" name="football" value="PeytonManning">What is 1943?<br>
+                <input type="radio" name="football" value="TomBrady">What is 1957?<br>
+                <input class="correct5" type="radio" name="football" value="AaronRodgers">What is 1966?<br>
+                <input class="footballSubmit5" type="submit" value="Submit">
+            </form>
+
+            </div>
+
+            <!-- Video Games category -->
+            <div class="videoGamesQA">
+                <form class="gamerEasy">
+                    <h2>This plumber has a brother named Luigi and his nemesis is Bowser.</h2>
+                    <input type="radio" name="gamer" value="DrewBrees">Who is Wario?<br>
+                    <input class="correct" type="radio" name="gamer" value="PeytonManning">Who is Mario?<br>
+                    <input type="radio" name="gamer" value="TomBrady">Who is Waluigi?<br>
+                    <input type="radio" name="gamer" value="AaronRodgers">Who is Donkey Kong?<br>
+                    <input class="gamerSubmit" type="submit" value="Submit">
                 </form>
-                <form class="footballMedium">
-                        <h2>This is the number of games a team plays in the NFL regular season.</h2>
-                        <input type="radio" name="football" value="DrewBrees">What is 15 games?<br>
-                        <input id="sixteen" type="radio" name="football" value="PeytonManning">What is 16 games?<br>
-                        <input type="radio" name="football" value="TomBrady">What is 17 games?<br>
-                        <input type="radio" name="football" value="AaronRodgers">What is 18 games?<br>
-                        <input class="footballSubmit2"type="submit" value="Submit">
+                <form class="gamerMedium">
+                    <h2>This video game series has Cortana help the main character.</h2>
+                    <input type="radio" name="gamer" value="DrewBrees">What is Gears of War?<br>
+                    <input type="radio" name="gamer" value="PeytonManning">What is the Legend of Zelda?<br>
+                    <input type="radio" name="gamer" value="TomBrady">What is Kingdom Hearts?<br>
+                    <input class="correct2" type="radio" name="gamer" value="AaronRodgers">What is Halo?<br>
+                    <input class="gamerSubmit2" type="submit" value="Submit">
                 </form>
-                <form class="footballHard">
-                        <h2>This is the first African American head coach to win a Super Bowl.</h2>
-                        <input id="tonyDungy" type="radio" name="football" value="DrewBrees">Who is Tony Dungy?<br>
-                        <input type="radio" name="football" value="PeytonManning">Who is Mike Tomlin?<br>
-                        <input type="radio" name="football" value="TomBrady">Who is Lovie Smith?<br>
-                        <input type="radio" name="football" value="AaronRodgers">Who is Dennis Green?<br>
-                        <input class="footballSubmit3"type="submit" value="Submit">
+                <form class="gamerHard">
+                    <h2>You traverse the lands as the Dovahkin in this best selling game of 2011.</h2>
+                    <input type="radio" name="gamer" value="DrewBrees">What is the Witcher?<br>
+                    <input type="radio" name="gamer" value="PeytonManning">What is Dragon Age Origins?<br>
+                    <input class="correct3" type="radio" name="gamer" value="TomBrady">What is the Elder Scrolls: Skyrim?<br>
+                    <input type="radio" name="gamer" value="AaronRodgers">What is Fallout New Vegas?<br>
+                    <input class="gamerSubmit3" type="submit" value="Submit">
                 </form>
-                <form class="footballVeryHard">
-                        <h2>This is the last non quarterback to win the NFL MVP award.</h2>
-                        <input type="radio" name="football" value="DrewBrees">Who is LaDainian Tomlinson?<br>
-                        <input id="allDay" type="radio" name="football" value="PeytonManning">Who Adrian Peterson?<br>
-                        <input type="radio" name="football" value="TomBrady">Who is Shaun Alexander?<br>
-                        <input type="radio" name="football" value="AaronRodgers">Who is Marshall Faulk?<br>
-                        <input class="footballSubmit4"type="submit" value="Submit">
+                <form class="gamerVeryHard">
+                    <h2>This character in Super Smash Bros. Ultimate has a move that can randomly turn him invisible.</h2>
+                    <input class="correct4" type="radio" name="gamer" value="DrewBrees">Who is Hero<br>
+                    <input type="radio" name="gamer" value="PeytonManning">Who is Cloud<br>
+                    <input type="radio" name="gamer" value="TomBrady">Who is Joker?<br>
+                    <input type="radio" name="gamer" value="AaronRodgers">Who is King K. Rool?<br>
+                    <input class="gamerSubmit4" type="submit" value="Submit">
                 </form>
-                <form class="footballInsane">
-                        <h2>This is the first year the Atlanta Falcons played in the NFL.</h2>
-                        <input type="radio" name="football" value="DrewBrees">What is 1978?<br>
-                        <input type="radio" name="football" value="PeytonManning">What is 1943?<br>
-                        <input type="radio" name="football" value="TomBrady">What is 1957?<br>
-                        <input id="falcons" type="radio" name="football" value="AaronRodgers">What is 1966?<br>
-                        <input class="footballSubmit5"type="submit" value="Submit">
+                <form class="gamerInsane">
+                    <h2>This is the first video game console.</h2>
+                    <input type="radio" name="gamer" value="DrewBrees">What is the NES?<br>
+                    <input type="radio" name="gamer" value="PeytonManning">What is the Atari 2600?<br>
+                    <input class="correct5" type="radio" name="gamer" value="TomBrady">What is the Magnavox Odyssey?<br>
+                    <input type="radio" name="gamer" value="AaronRodgers">What is the Sega Genesis?<br>
+                    <input class="gamerSubmit5" type="submit" value="Submit">
                 </form>
             </div>
 
-                
             <div class="oneContainer">
-                    <div class="one firstOne">100</div>
-                    <div class="one secondOne">100</div>
-                    <div class="one thirdOne">100</div>
-                    <div class="one fourthOne">100</div>
-                    <div class="one fifthOne">100</div>
+                <div class="one firstOne">100</div>
+                <div class="one secondOne">100</div>
+                <div class="one thirdOne">100</div>
+                <div class="one fourthOne">100</div>
+                <div class="one fifthOne">100</div>
             </div>
 
             <div class="twoContainer">
-                    <div class="two firstTwo">200</div>
-                    <div class="two secondTwo">200</div>
-                    <div class="two thirdTwo">200</div>
-                    <div class="two fourthTwo">200</div>
-                    <div class="two fifthTwo">200</div>
+                <div class="two firstTwo">200</div>
+                <div class="two secondTwo">200</div>
+                <div class="two thirdTwo">200</div>
+                <div class="two fourthTwo">200</div>
+                <div class="two fifthTwo">200</div>
             </div>
 
             <div class="threeContainer">
-                    <div class="three firstThree">300</div>
-                    <div class="three secondThree">300</div>
-                    <div class="three thirdThree">300</div>
-                    <div class="three fourthThree">300</div>
-                    <div class="three fifthThree">300</div>
+                <div class="three firstThree">300</div>
+                <div class="three secondThree">300</div>
+                <div class="three thirdThree">300</div>
+                <div class="three fourthThree">300</div>
+                <div class="three fifthThree">300</div>
             </div>
 
             <div class="fourContainer">
-                    <div class="four firstFour">400</div>
-                    <div class="four secondFour">400</div>
-                    <div class="four thirdFour">400</div>
-                    <div class="four fourthFour">400</div>
-                    <div class="four fifthFour">400</div>
+                <div class="four firstFour">400</div>
+                <div class="four secondFour">400</div>
+                <div class="four thirdFour">400</div>
+                <div class="four fourthFour">400</div>
+                <div class="four fifthFour">400</div>
             </div>
-            
+
 
             <div class="fiveContainer">
-                    <div class="five firstFive">500</div>
-                    <div class="five secondFive">500</div>
-                    <div class="five thirdFive">500</div>
-                    <div class="five fourthFive">500</div>
-                    <div class="five fifthFive">500</div>
+                <div class="five firstFive">500</div>
+                <div class="five secondFive">500</div>
+                <div class="five thirdFive">500</div>
+                <div class="five fourthFive">500</div>
+                <div class="five fifthFive">500</div>
             </div>
-            
+
             <div class="categories">
-                <div class="points"></div>
+                <div class="points">0</div>
                 <div class="football">1</div>
                 <div class="videoGames">2</div>
                 <div class="anime">3</div>
@@ -113,7 +160,8 @@
                 <div class="marvelMovies">5</div>
             </div>
 
-    </div>
-    
+        </div>
+
 </body>
+
 </html>
