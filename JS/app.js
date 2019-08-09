@@ -13,17 +13,33 @@ const correctChoice3 = document.querySelector('.correct3');
 const correctChoice4 = document.querySelector('.correct4');
 const correctChoice5 = document.querySelector('.correct5');
 
-const gamerChoice = document.querySelector('.correct');
-const gamerChoice2 = document.querySelector('.correct2');
-const gamerChoice3 = document.querySelector('.correct3');
-const gamerChoice4 = document.querySelector('.correct4');
-const gamerChoice5 = document.querySelector('.correct5');
+const gamerChoice = document.querySelector('.gamerCorrect');
+const gamerChoice2 = document.querySelector('.gamerCorrect2');
+const gamerChoice3 = document.querySelector('.gamerCorrect3');
+const gamerChoice4 = document.querySelector('.gamerCorrect4');
+const gamerChoice5 = document.querySelector('.gamerCorrect5');
 
 const footballClass = document.querySelector('.football');
 
 const correctAnswerOne = () => {
     
     if(correctChoice.checked == true) {
+
+        newTotal += 100;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 100;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const gamerAnswerOne = () => {
+    
+    if(gamerChoice.checked == true) {
 
         newTotal += 100;
         total.innerText = newTotal;
@@ -53,9 +69,41 @@ const correctAnswerTwo = () => {
      }
 }
 
+const gamerAnswerTwo = () => {
+    
+    if(gamerChoice2.checked == true) {
+
+        newTotal += 200;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 200;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 const correctAnswerThree = () => {
     
     if(correctChoice3.checked == true) {
+
+        newTotal += 300;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 300;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
+const gamerAnswerThree = () => {
+    
+    if(gamerChoice3.checked == true) {
 
         newTotal += 300;
         total.innerText = newTotal;
@@ -85,6 +133,22 @@ const correctAnswerFour = () => {
      }
 }
 
+const gamerAnswerFour = () => {
+    
+    if(gamerChoice4.checked == true) {
+
+        newTotal += 400;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 400;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 const correctAnswerFive = () => {
 
     
@@ -101,6 +165,24 @@ const correctAnswerFive = () => {
          console.log(newTotal);
      }
 }
+
+const gamerAnswerFive = () => {
+
+    
+    if(gamerChoice5.checked == true) {
+
+        newTotal += 500;
+        total.innerText = newTotal;
+        console.log(newTotal);
+
+     } else {
+
+         newTotal -= 500;
+         total.innerText = newTotal;
+         console.log(newTotal);
+     }
+}
+
 //check if the correct radio button is checked for the football category
 const footballQuestionsOne = () => {
 
@@ -229,7 +311,7 @@ const gamerQuestionsOne = () => {
     document.querySelector('.gamerEasy').addEventListener('submit', function() {
         event.preventDefault();
 
-        correctAnswerOne();
+        gamerAnswerOne();
 
     });
     
@@ -251,7 +333,7 @@ const gamerQuestionsTwo = () => {
     document.querySelector('.gamerMedium').addEventListener('submit', function() {
         event.preventDefault();
        
-        correctAnswerTwo();
+        gamerAnswerTwo();
 
     });
     
@@ -273,7 +355,7 @@ const gamerQuestionsThree = () => {
     document.querySelector('.gamerHard').addEventListener('submit', function() {
         event.preventDefault();
        
-        correctAnswerThree();
+        gamerAnswerThree();
 
     });
     
@@ -295,7 +377,7 @@ const gamerQuestionsFour = () => {
     document.querySelector('.gamerVeryHard').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerFour();
+        gamerAnswerFour();
 
     });
     
@@ -317,7 +399,7 @@ const gamerQuestionsFive = () => {
     document.querySelector('.gamerInsane').addEventListener('submit', function() {
         event.preventDefault();
         
-        correctAnswerFive();
+        gamerAnswerFive();
 
     });
     
@@ -333,6 +415,94 @@ const gamerDisappearFive = () => {
 
 //onclick make the questions disappear
 document.querySelector('.gamerSubmit5').addEventListener('click', gamerDisappearFive);
+
+const animeQuestionsOne = () => {
+
+    document.querySelector('.animeEasy').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        correctAnswerOne();
+
+    });
+    
+}
+animeQuestionsOne();
+
+const animeDisappearOne = () => {
+
+    animeQADisappear();
+    document.querySelector('.animeEasy').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.animeSubmit').addEventListener('click', animeDisappearOne);
+
+const animeQuestionsTwo = () => {
+
+    document.querySelector('.animeMedium').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        correctAnswerTwo();
+
+    });
+    
+}
+animeQuestionsTwo();
+
+const animeDisappearTwo = () => {
+
+    animeQADisappear();
+    document.querySelector('.animeMedium').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.animeSubmit2').addEventListener('click', animeDisappearTwo);
+
+const animeQuestionsThree = () => {
+
+    document.querySelector('.animeHard').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        correctAnswerThree();
+
+    });
+    
+}
+animeQuestionsThree();
+
+const animeDisappearThree = () => {
+
+    animeQADisappear();
+    document.querySelector('.animeHard').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.animeSubmit3').addEventListener('click', animeDisappearThree);
+
+const animeQuestionsFour = () => {
+
+    document.querySelector('.animeVeryHard').addEventListener('submit', function() {
+        event.preventDefault();
+        
+        correctAnswerFour();
+
+    });
+    
+}
+animeQuestionsFour();
+
+const animeDisappearFour = () => {
+
+    animeQADisappear();
+    document.querySelector('.animeVeryHard').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.animeSubmit4').addEventListener('click', animeDisappearFour);
 
 const animeQuestionsFive = () => {
 
