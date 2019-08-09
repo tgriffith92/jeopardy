@@ -160,6 +160,10 @@ const footballQADisappear = () => {
     document.querySelector('.footballQA').style.display = 'none';
 }
 
+const gamerQADisappear = () => {
+    document.querySelector('.videoGamesQA').style.display = 'none';
+}
+
 //make the football container disappear
 const footballDisappearOne = () => {
 
@@ -258,17 +262,27 @@ document.querySelector('.footballSubmit5').addEventListener('click', footballDis
 // }
 // gamerQuestionsFour();
 
-// const gamerQuestionsFive = () => {
+const gamerQuestionsFive = () => {
 
-//     document.querySelector('.gamerInsane').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.gamerInsane').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         correctAnswer();
+        correctAnswerFive();
 
-//     });
+    });
     
-// }
-// gamerQuestionsFive();
+}
+gamerQuestionsFive();
+
+const gamerDisappearFive = () => {
+
+    gamerQADisappear();
+    document.querySelector('.gamerInsane').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.gamerSubmit5').addEventListener('click', gamerDisappearFive);
  
 //create a new div to hold the football answers
 const firstFiveCont = () => {
@@ -374,28 +388,29 @@ const secondFiveCont = () => {
    secondFive.appendChild(videoFive);
 
    document.querySelector('.videoGamesQA').style.display = 'block';
-   document.querySelector('.gamerEasy').style.display = 'block';
+   document.querySelector('.gamerInsane').style.display = 'block';
 }
 
 // //onclick move the number 2 into the second 500 container
 document.querySelector('.secondFive').addEventListener('click', secondFiveCont);
 
-const secondFourCont = () => {
+// const secondFourCont = () => {
 
-   event.preventDefault();
+//    event.preventDefault();
 
-  let numberFour = document.querySelector('.videoGames');
+//   let numberFour = document.querySelector('.videoGames');
   
-  let secondFour = document.querySelector('.secondFour');
+//   let secondFour = document.querySelector('.secondFour');
   
-  //make the number 2 a child of the second 400 container
-  secondFour.appendChild(numberFour);
+//   //make the number 2 a child of the second 400 container
+//   secondFour.appendChild(numberFour);
 
-  document.querySelector('.videoGamesQA').style.display = 'block';
-}
+//   document.querySelector('.videoGamesQA').style.display = 'block';
+//   document.querySelector('.gamerVeryHard').style.display = 'block';
+// }
 
-// //onclick move the number 2 into the second 400 container
-document.querySelector('.secondFour').addEventListener('click', secondFourCont);
+// // //onclick move the number 2 into the second 400 container
+// document.querySelector('.secondFour').addEventListener('click', secondFourCont);
 
 // const secondThreeCont = () => {
 
