@@ -500,7 +500,7 @@ const footballDisappearOne = () => {
 
     footballQADisappear();
     document.querySelector('.footballEasy').style.display = 'none';
-    document.querySelector('.firstOne').innerText = '';
+    
 }
 
 //onclick make the questions disappear
