@@ -420,7 +420,7 @@ const footballQuestionsOne = () => {
         event.preventDefault();
 
         correctAnswerOne();
-
+        document.querySelector('.firstOne').style.backgroundColor = 'black';
     });
     
 }
@@ -432,7 +432,7 @@ const footballQuestionsTwo = () => {
         event.preventDefault();
        
         correctAnswerTwo();
-
+        document.querySelector('.firstTwo').style.backgroundColor = 'black';
     });
     
 }
@@ -444,7 +444,7 @@ const footballQuestionsThree = () => {
         event.preventDefault();
        
         correctAnswerThree();
-
+        document.querySelector('.firstThree').style.backgroundColor = 'black';
     });
     
 }
@@ -456,7 +456,7 @@ const footballQuestionsFour = () => {
         event.preventDefault();
         
         correctAnswerFour();
-
+        document.querySelector('.firstFour').style.backgroundColor = 'black';
     });
     
 }
@@ -468,7 +468,7 @@ const footballQuestionsFive = () => {
         event.preventDefault();
         
         correctAnswerFive();
-
+        document.querySelector('.firstFive').style.backgroundColor = 'black';
     });
     
 }
