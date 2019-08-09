@@ -13,6 +13,12 @@ const correctChoice3 = document.querySelector('.correct3');
 const correctChoice4 = document.querySelector('.correct4');
 const correctChoice5 = document.querySelector('.correct5');
 
+const gamerChoice = document.querySelector('.correct');
+const gamerChoice2 = document.querySelector('.correct2');
+const gamerChoice3 = document.querySelector('.correct3');
+const gamerChoice4 = document.querySelector('.correct4');
+const gamerChoice5 = document.querySelector('.correct5');
+
 const footballClass = document.querySelector('.football');
 
 const correctAnswerOne = () => {
@@ -156,6 +162,7 @@ const footballQuestionsFive = () => {
 }
 footballQuestionsFive();
 
+//make the category containers disappear
 const footballQADisappear = () => {
     document.querySelector('.footballQA').style.display = 'none';
 }
@@ -250,17 +257,27 @@ document.querySelector('.footballSubmit5').addEventListener('click', footballDis
 // }
 // gamerQuestionsThree();
 
-// const gamerQuestionsFour = () => {
+const gamerQuestionsFour = () => {
 
-//     document.querySelector('.gamerVeryHard').addEventListener('submit', function() {
-//         event.preventDefault();
+    document.querySelector('.gamerVeryHard').addEventListener('submit', function() {
+        event.preventDefault();
         
-//         correctAnswer();
+        correctAnswerFour();
 
-//     });
+    });
     
-// }
-// gamerQuestionsFour();
+}
+gamerQuestionsFour();
+
+const gamerDisappearFour = () => {
+
+    gamerQADisappear();
+    document.querySelector('.gamerVeryHard').style.display = 'none';
+
+}
+
+//onclick make the questions disappear
+document.querySelector('.gamerSubmit4').addEventListener('click', gamerDisappearFour);
 
 const gamerQuestionsFive = () => {
 
@@ -391,26 +408,26 @@ const secondFiveCont = () => {
    document.querySelector('.gamerInsane').style.display = 'block';
 }
 
-// //onclick move the number 2 into the second 500 container
+//onclick move the number 2 into the second 500 container
 document.querySelector('.secondFive').addEventListener('click', secondFiveCont);
 
-// const secondFourCont = () => {
+const secondFourCont = () => {
 
-//    event.preventDefault();
+   event.preventDefault();
 
-//   let numberFour = document.querySelector('.videoGames');
+  let numberFour = document.querySelector('.videoGames');
   
-//   let secondFour = document.querySelector('.secondFour');
+  let secondFour = document.querySelector('.secondFour');
   
-//   //make the number 2 a child of the second 400 container
-//   secondFour.appendChild(numberFour);
+  //make the number 2 a child of the second 400 container
+  secondFour.appendChild(numberFour);
 
-//   document.querySelector('.videoGamesQA').style.display = 'block';
-//   document.querySelector('.gamerVeryHard').style.display = 'block';
-// }
+  document.querySelector('.videoGamesQA').style.display = 'block';
+  document.querySelector('.gamerVeryHard').style.display = 'block';
+}
 
-// // //onclick move the number 2 into the second 400 container
-// document.querySelector('.secondFour').addEventListener('click', secondFourCont);
+//onclick move the number 2 into the second 400 container
+document.querySelector('.secondFour').addEventListener('click', secondFourCont);
 
 // const secondThreeCont = () => {
 
