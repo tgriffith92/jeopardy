@@ -1,15 +1,18 @@
-//create a function for the if statements and call them for each Q&A
-//create an array to cycle through the questions and answers
-
-
 //store the point total
 let total = document.querySelector('.points');
 
 let newTotal = parseFloat(total.innerText);
 
-// if(total.innerText >= 5300) {
-//     alert('Hooray you win!!!');
-// }
+const win = () => {
+    
+        if(total.innerText >= 3500) {
+            alert('Hooray you win!!!');
+        } else {
+            alert('You lose.');
+        }
+    
+}
+
 const correctChoice = document.querySelector('.correct');
 const correctChoice2 = document.querySelector('.correct2');
 const correctChoice3 = document.querySelector('.correct3');
@@ -335,7 +338,6 @@ const marvelAnswerFour = () => {
 //add 500 to the point container
 const correctAnswerFive = () => {
 
-    
     if(correctChoice5.checked == true) {
 
         newTotal += 500;
@@ -350,7 +352,6 @@ const correctAnswerFive = () => {
 }
 
 const gamerAnswerFive = () => {
-
     
     if(gamerChoice5.checked == true) {
 
@@ -367,7 +368,6 @@ const gamerAnswerFive = () => {
 
 const animeAnswerFive = () => {
 
-    
     if(animeChoice5.checked == true) {
 
         newTotal += 500;
@@ -383,7 +383,6 @@ const animeAnswerFive = () => {
 
 const basketballAnswerFive = () => {
 
-    
     if(basketballChoice5.checked == true) {
 
         newTotal += 500;
@@ -399,7 +398,6 @@ const basketballAnswerFive = () => {
 
 const marvelAnswerFive = () => {
 
-    
     if(marvelChoice5.checked == true) {
 
         newTotal += 500;
@@ -500,7 +498,7 @@ const footballDisappearOne = () => {
 
     footballQADisappear();
     document.querySelector('.footballEasy').style.display = 'none';
-    
+    win();
 }
 
 //onclick make the questions disappear
@@ -552,7 +550,7 @@ const gamerQuestionsOne = () => {
         event.preventDefault();
 
         gamerAnswerOne();
-
+        document.querySelector('.secondOne').style.backgroundColor = 'black';
     });
     
 }
@@ -574,6 +572,7 @@ const gamerQuestionsTwo = () => {
         event.preventDefault();
        
         gamerAnswerTwo();
+        document.querySelector('.secondTwo').style.backgroundColor = 'black';
 
     });
     
@@ -596,6 +595,7 @@ const gamerQuestionsThree = () => {
         event.preventDefault();
        
         gamerAnswerThree();
+        document.querySelector('.secondThree').style.backgroundColor = 'black';
 
     });
     
@@ -618,6 +618,7 @@ const gamerQuestionsFour = () => {
         event.preventDefault();
         
         gamerAnswerFour();
+        document.querySelector('.secondFour').style.backgroundColor = 'black';
 
     });
     
@@ -640,6 +641,7 @@ const gamerQuestionsFive = () => {
         event.preventDefault();
         
         gamerAnswerFive();
+        document.querySelector('.secondFive').style.backgroundColor = 'black';
 
     });
     
@@ -662,7 +664,7 @@ const animeQuestionsOne = () => {
         event.preventDefault();
         
         animeAnswerOne();
-
+        document.querySelector('.thirdOne').style.backgroundColor = 'black';
     });
     
 }
@@ -684,7 +686,7 @@ const animeQuestionsTwo = () => {
         event.preventDefault();
         
         animeAnswerTwo();
-
+        document.querySelector('.thirdTwo').style.backgroundColor = 'black';
     });
     
 }
@@ -706,7 +708,7 @@ const animeQuestionsThree = () => {
         event.preventDefault();
         
         animeAnswerThree();
-
+        document.querySelector('.thirdThree').style.backgroundColor = 'black';
     });
     
 }
@@ -728,7 +730,7 @@ const animeQuestionsFour = () => {
         event.preventDefault();
         
         animeAnswerFour();
-
+        document.querySelector('.thirdFour').style.backgroundColor = 'black';
     });
     
 }
@@ -750,7 +752,7 @@ const animeQuestionsFive = () => {
         event.preventDefault();
         
         animeAnswerFive();
-
+        document.querySelector('.thirdFive').style.backgroundColor = 'black';
     });
     
 }
@@ -772,7 +774,7 @@ const basketballQuestionsOne = () => {
         event.preventDefault();
         
         basketballAnswerOne();
-
+        document.querySelector('.fourthOne').style.backgroundColor = 'black';
     });
     
 }
@@ -794,7 +796,7 @@ const basketballQuestionsTwo = () => {
         event.preventDefault();
         
         basketballAnswerTwo();
-
+        document.querySelector('.fourthTwo').style.backgroundColor = 'black';
     });
     
 }
@@ -816,7 +818,7 @@ const basketballQuestionsThree = () => {
         event.preventDefault();
         
         basketballAnswerThree();
-
+        document.querySelector('.fourthThree').style.backgroundColor = 'black';
     });
     
 }
@@ -838,7 +840,7 @@ const basketballQuestionsFour = () => {
         event.preventDefault();
         
         basketballAnswerFour();
-
+        document.querySelector('.fourthFour').style.backgroundColor = 'black';
     });
     
 }
@@ -860,7 +862,7 @@ const basketballQuestionsFive = () => {
         event.preventDefault();
         
         basketballAnswerFive();
-
+        document.querySelector('.fourthFive').style.backgroundColor = 'black';
     });
     
 }
@@ -882,6 +884,7 @@ const marvelQuestionsOne = () => {
         event.preventDefault();
         
         marvelAnswerOne();
+        document.querySelector('.fifthOne').style.backgroundColor = 'black';
 
     });
     
@@ -904,7 +907,7 @@ const marvelQuestionsTwo = () => {
         event.preventDefault();
         
         marvelAnswerTwo();
-
+        document.querySelector('.fifthTwo').style.backgroundColor = 'black';
     });
     
 }
@@ -926,7 +929,7 @@ const marvelQuestionsThree = () => {
         event.preventDefault();
         
         marvelAnswerThree();
-
+        document.querySelector('.fifthThree').style.backgroundColor = 'black';
     });
     
 }
@@ -948,7 +951,7 @@ const marvelQuestionsFour = () => {
         event.preventDefault();
         
         marvelAnswerFour();
-
+        document.querySelector('.fifthFour').style.backgroundColor = 'black';
     });
     
 }
@@ -970,7 +973,7 @@ const marvelQuestionsFive = () => {
         event.preventDefault();
         
         marvelAnswerFive();
-
+        document.querySelector('.fifthFive').style.backgroundColor = 'black';
     });
     
 }
