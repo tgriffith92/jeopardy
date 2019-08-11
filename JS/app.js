@@ -4,9 +4,13 @@ let total = document.querySelector('.points');
 let newTotal = parseFloat(total.innerText);
 
 const win = () => {
-    if(total.innerText >= 5300) {
-        alert('Hooray you win!!!');
-    }
+    
+        if(total.innerText >= 3500) {
+            alert('Hooray you win!!!');
+        } else {
+            alert('You lose.');
+        }
+    
 }
 
 const correctChoice = document.querySelector('.correct');
@@ -494,7 +498,7 @@ const footballDisappearOne = () => {
 
     footballQADisappear();
     document.querySelector('.footballEasy').style.display = 'none';
-    
+    win();
 }
 
 //onclick make the questions disappear
