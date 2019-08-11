@@ -8,3 +8,4 @@ https://github.com/tgriffith92/jeopardy/projects/1
 
 This is the wireframe
 
+![Jeopardy Page](https://github.com/tgriffith92/jeopardy/blob/master/WireFrame/Jeopardy%20Page.png)
