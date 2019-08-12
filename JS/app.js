@@ -7,16 +7,16 @@ let complete = 0;
 
 const win = () => {
 
-    complete ++;
-    console.log(complete);
 
-    if(complete === 25) {
-        if(total.innerText >= 3500) {
+    if(complete === 2) {
+        if(total.innerText >= 300) {
             alert('Hooray you win!!!');
         } else {
             alert('You lose.');
         }
     }
+
+    complete ++;
 
     return complete;
  
