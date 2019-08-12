@@ -4,14 +4,26 @@ let total = document.querySelector('.points');
 let newTotal = parseFloat(total.innerText);
 
 const win = () => {
-    
-        if(total.innerText >= 3500) {
-            alert('Hooray you win!!!');
-        } else {
-            alert('You lose.');
-        }
+    let complete = 0;
+
+    let finalScore = document.getElementsByClassName('score');
+
+    for(let i = 0; i < finalScore.length; i++) {
+        
+        complete ++;
+        console.log(complete);
+    }
+        
+        // if(total.innerText >= 3500) {
+        //     alert('Hooray you win!!!');
+        // } else {
+        //     alert('You lose.');
+        // }
+        
     
 }
+        
+win();
 
 const correctChoice = document.querySelector('.correct');
 const correctChoice2 = document.querySelector('.correct2');
@@ -498,7 +510,6 @@ const footballDisappearOne = () => {
 
     footballQADisappear();
     document.querySelector('.footballEasy').style.display = 'none';
-    win();
 }
 
 //onclick make the questions disappear
