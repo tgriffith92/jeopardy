@@ -9,7 +9,7 @@ const win = () => {
 
 
     if(complete === 25) {
-        if(total.innerText >= 300) {
+        if(total.innerText >= 3500) {
             alert('Hooray you win!!!');
         } else {
             alert('You lose.');

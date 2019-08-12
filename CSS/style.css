@@ -12,6 +12,14 @@ span {
     margin: 0 auto;
 }
 
+h2 {
+    text-align: center;
+}
+
+input {
+    padding-left: 100px;
+}
+
 /* Header styling*/
 .catFootball {
     color: brown;
@@ -173,20 +181,25 @@ span {
 
 .football {
     color: brown;
+    font-size: 20px
 }
 
 .videoGames {
     color: green;
+    font-size: 20px;
 }
 
 .anime {
     color: red;
+    font-size: 20px;
 }
 
 .basketball {
     color: orange;
+    font-size: 20px
 }
 
 .marvelMovies {
     color: silver;
+    font-size: 20px;
 }
