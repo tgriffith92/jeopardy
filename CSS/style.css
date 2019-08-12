@@ -155,6 +155,11 @@ span {
     display: none;
 }
 
+.result {
+    font-size: 40px;
+    width: 100px;
+}
+
 .points {
     border: 3px solid black;
     width: 100px;
