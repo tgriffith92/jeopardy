@@ -3,27 +3,24 @@ let total = document.querySelector('.points');
 
 let newTotal = parseFloat(total.innerText);
 
+let complete = 0;
+
 const win = () => {
-    let complete = 0;
 
-    let finalScore = document.getElementsByClassName('score');
+    complete ++;
+    console.log(complete);
 
-    for(let i = 0; i < finalScore.length; i++) {
-        
-        complete ++;
-        console.log(complete);
+    if(complete === 25) {
+        if(total.innerText >= 3500) {
+            alert('Hooray you win!!!');
+        } else {
+            alert('You lose.');
+        }
     }
-        
-        // if(total.innerText >= 3500) {
-        //     alert('Hooray you win!!!');
-        // } else {
-        //     alert('You lose.');
-        // }
-        
-    
+
+    return complete;
+ 
 }
-        
-win();
 
 const correctChoice = document.querySelector('.correct');
 const correctChoice2 = document.querySelector('.correct2');
