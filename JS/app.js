@@ -8,7 +8,7 @@ let complete = 0;
 const win = () => {
 
 
-    if(complete === 2) {
+    if(complete === 25) {
         if(total.innerText >= 300) {
             alert('Hooray you win!!!');
         } else {
